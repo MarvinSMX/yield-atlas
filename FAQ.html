@@ -57,18 +57,25 @@
     <style>
 /* mrvn ETF Network — shared design system (inline per repo for GitHub Pages) */
 :root {
+  /* Canonical tokens */
+  --bg: #09090B;
+  --surface: #121214;
+  --surface-2: #161618;
   --ink: #F4F4F5;
-  --ink-muted: #A1A1AA;
-  --ink-faint: #71717A;
-  --paper: #09090B;
-  --paper-2: #121214;
+  --muted: #A1A1AA;
   --line: #27272A;
+  --accent: #FF5C33;
+  /* Extended / legacy aliases (same values) */
+  --ink-muted: var(--muted);
+  --ink-faint: #71717A;
+  --paper: var(--bg);
+  --paper-2: var(--surface);
   --line-strong: #3F3F46;
   --header: #000000;
   --header-ink: #FAFAFA;
-  --accent: #FF5C33;
   --accent-soft: rgba(255, 92, 51, 0.14);
   --accent-hover: #FF8A66;
+  --on-accent: #000000;
   --danger: #FF4D6A;
   --pos: #FF5C33;
   --shell: 94%;
@@ -80,7 +87,7 @@
   /* aliases for legacy site CSS */
   --brand: var(--header);
   --brand-dark: #000000;
-  --brand-mid: #121214;
+  --brand-mid: var(--surface);
   --brand-lite: #1A1A1E;
   --gold: var(--accent);
   --gold2: var(--accent-hover);
@@ -90,14 +97,17 @@
   --purple: var(--accent);
   --purple-bright: var(--accent-hover);
   --purple-deep: var(--header);
-  --bg: var(--paper);
-  --bg-primary: var(--paper);
-  --bg-secondary: var(--paper-2);
-  --bg-panel: var(--paper-2);
-  --bg-panel-2: #161618;
+  --bg-primary: var(--bg);
+  --bg-secondary: var(--surface);
+  --bg-panel: var(--surface);
+  --bg-panel-2: var(--surface-2);
   --text-primary: var(--ink);
-  --text-secondary: var(--ink-muted);
+  --text-secondary: var(--muted);
   --text-muted: var(--ink-faint);
+  --border: var(--line);
+  --light: var(--surface);
+  --mid: var(--muted);
+  --gray: var(--ink-faint);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -110,7 +120,7 @@ html, body {
 }
 body {
   font-family: var(--font-sans);
-  background: var(--paper);
+  background: var(--bg);
   color: var(--ink);
   line-height: 1.55;
   min-height: 100vh;
@@ -148,7 +158,7 @@ a:hover { color: var(--accent-hover); }
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(250, 250, 250, 0.42);
+  color: rgba(250, 250, 250, 0.55);
   margin-top: 0.45rem;
 }
 .logo-link { text-decoration: none; display: inline-block; }
@@ -179,13 +189,13 @@ a:hover { color: var(--accent-hover); }
 .header-link:hover, .nx-nav a:hover, .btn-ghost:hover {
   background: var(--accent);
   border-color: var(--accent);
-  color: #000;
+  color: var(--on-accent);
 }
 
 /* Network bar */
 .site-network-bar {
   width: 100%;
-  background: var(--paper-2);
+  background: var(--surface);
   border-bottom: 1px solid var(--line);
   padding: 0.5rem 0;
 }
@@ -235,7 +245,7 @@ a:hover { color: var(--accent-hover); }
 .site-pill.current {
   background: var(--accent);
   border-color: var(--accent);
-  color: #000;
+  color: var(--on-accent);
   cursor: default;
   font-weight: 700;
 }
@@ -246,7 +256,7 @@ a:hover { color: var(--accent-hover); }
 /* Hero */
 .nx-hero, .hero, .main-h1 {
   width: 100%;
-  background: var(--paper);
+  background: var(--bg);
   text-align: center;
   padding: 2.5rem 1.25rem 1.85rem;
   border-bottom: 1px solid var(--line);
@@ -265,7 +275,7 @@ a:hover { color: var(--accent-hover); }
 .nx-support, .hero-desc, .intro-text {
   max-width: 40rem;
   margin: 0 auto 1.25rem;
-  color: var(--ink-muted);
+  color: var(--muted);
   font-family: var(--font-mono);
   font-size: 0.82rem;
   line-height: 1.75;
@@ -275,7 +285,7 @@ a:hover { color: var(--accent-hover); }
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
   overflow: hidden;
-  background: var(--paper-2);
+  background: var(--surface);
 }
 .hero-stat {
   padding: 0.9rem 1.5rem;
@@ -326,7 +336,7 @@ a:hover { color: var(--accent-hover); }
   color: var(--ink);
 }
 .section-head p {
-  color: var(--ink-muted);
+  color: var(--muted);
   margin: 0;
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -354,7 +364,7 @@ input[type="text"], select {
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
   padding: 0.55rem 0.75rem;
-  background: var(--paper-2);
+  background: var(--surface);
   color: var(--ink);
 }
 #filters input:focus, #searchInput:focus, #searchFilter:focus, #etfSearch:focus {
@@ -371,19 +381,19 @@ input[type="text"], select {
   padding: 0.5rem 0.85rem;
   border-radius: var(--radius);
   border: 1px solid var(--line-strong);
-  background: var(--paper-2);
+  background: var(--surface);
   color: var(--ink);
   cursor: pointer;
 }
 #resetFilters, #resetBtn {
   background: var(--accent);
-  color: #000;
+  color: var(--on-accent);
   border-color: var(--accent);
 }
 .special-btn.active, .special-btn:hover {
   background: var(--accent);
   border-color: var(--accent);
-  color: #000;
+  color: var(--on-accent);
 }
 #special-views {
   display: flex;
@@ -397,7 +407,7 @@ input[type="text"], select {
 #etfTable, table.etf-table, .peer-table, #holdings-table, table {
   width: 100%;
   border-collapse: collapse;
-  background: var(--paper-2);
+  background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
@@ -424,7 +434,7 @@ input[type="text"], select {
   color: var(--ink);
 }
 #etfTable tbody tr:nth-child(even), table tbody tr:nth-child(even) {
-  background: #161618;
+  background: var(--surface-2);
 }
 #etfTable tbody tr:hover, table tbody tr:hover {
   background: var(--accent-soft);
@@ -442,7 +452,7 @@ input[type="text"], select {
   gap: 1rem;
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  color: var(--ink-muted);
+  color: var(--muted);
   margin: 0.35rem 0 0.65rem;
 }
 
@@ -452,11 +462,11 @@ input[type="text"], select {
   margin-top: auto;
   padding: 2rem 1.25rem 2.5rem;
   text-align: center;
-  color: var(--ink-muted);
+  color: var(--muted);
   font-family: var(--font-mono);
   font-size: 0.72rem;
   border-top: 1px solid var(--line);
-  background: var(--paper-2);
+  background: var(--surface);
 }
 .footer a, footer a {
   color: var(--accent);
@@ -481,13 +491,13 @@ input[type="text"], select {
 }
 .back-to-top:hover {
   background: var(--accent);
-  color: #000 !important;
+  color: var(--on-accent) !important;
 }
 
 /* Misc chrome */
 .watchlist-btn, .header-pro-btn {
   background: var(--accent) !important;
-  color: #000 !important;
+  color: var(--on-accent) !important;
   border: none !important;
   border-radius: var(--radius) !important;
   font-family: var(--font-mono) !important;
@@ -508,7 +518,7 @@ input[type="text"], select {
   width: 100%;
   background: var(--accent-soft);
   border-bottom: 1px solid var(--line);
-  color: var(--ink-muted);
+  color: var(--muted);
   font-family: var(--font-mono);
   font-size: 0.72rem;
   text-align: center;
@@ -525,7 +535,7 @@ input[type="text"], select {
             font-family: 'Syne', Arial, sans-serif;
             margin: 0;
             background-color: #09090B;
-            color: #333;
+            color: #F4F4F5;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -562,13 +572,13 @@ input[type="text"], select {
             margin: 0 auto 20px auto;
             line-height: 1.6;
             text-align: center;
-            color: #444;
+            color: #A1A1AA;
         }
         .faq-container {
             width: 90%;
             max-width: 900px;
-            background: white;
-            border: 3px solid #B45309;
+            background: #121214;
+            border: 3px solid #FF5C33;
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -585,7 +595,7 @@ input[type="text"], select {
         }
         .faq-item p {
             font-size: 1em;
-            color: #333;
+            color: #F4F4F5;
             line-height: 1.6;
             margin: 0;
         }
@@ -617,7 +627,7 @@ input[type="text"], select {
         }
         .disclaimer {
             font-size: 0.9em;
-            color: #666;
+            color: #A1A1AA;
             margin: 20px auto;
             max-width: 900px;
             line-height: 1.4;
@@ -625,12 +635,12 @@ input[type="text"], select {
         }
         .footer {
             font-size: 0.9em;
-            color: #666;
+            color: #A1A1AA;
             margin: 20px auto 10px auto;
             max-width: 900px;
             text-align: center;
             padding: 10px 0;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #27272A;
         }
         .footer a {
             color: #000000;
@@ -655,8 +665,30 @@ input[type="text"], select {
     
 
 /* Force dark network chrome */
+:root {
+  --bg: #09090B !important;
+  --surface: #121214 !important;
+  --ink: #F4F4F5 !important;
+  --muted: #A1A1AA !important;
+  --line: #27272A !important;
+  --accent: #FF5C33 !important;
+  --paper: #09090B !important;
+  --paper-2: #121214 !important;
+  --ink-muted: #A1A1AA !important;
+  --text-primary: #F4F4F5 !important;
+  --text-secondary: #A1A1AA !important;
+  --bg-primary: #09090B !important;
+  --bg-secondary: #121214 !important;
+  --gold: #FF5C33 !important;
+  --gold2: var(--accent-hover) !important;
+  --green: #FF5C33 !important;
+  --primary: #FF5C33 !important;
+  --navy: #000000 !important;
+  --brand: #000000 !important;
+  --light: #121214 !important;
+}
 body {
-  background: var(--paper) !important;
+  background: var(--bg) !important;
   color: var(--ink) !important;
 }
 header, .nx-header {
@@ -664,22 +696,112 @@ header, .nx-header {
   color: var(--header-ink) !important;
   border-bottom: 2px solid #FF5C33 !important;
 }
-.hero, .nx-hero, main > .hero, section.hero {
-  background: var(--paper) !important;
+.logo, .nx-logo, .logo-text { color: var(--header-ink) !important; }
+.logo span, .nx-logo span { color: #FF5C33 !important; }
+.logo-sub, .nx-tagline { color: rgba(250,250,250,0.55) !important; }
+.header-link, .nx-nav a { color: var(--header-ink) !important; }
+.header-link:hover, .nx-nav a:hover {
+  background: #FF5C33 !important;
+  color: #000 !important;
+  border-color: #FF5C33 !important;
+}
+.hero, .nx-hero, main > .hero, section.hero, .main-h1 {
+  background: var(--bg) !important;
   color: var(--ink) !important;
 }
-.hero h1, .nx-hero h1, section.hero h1 {
+.hero h1, .nx-hero h1, section.hero h1, h1 {
   color: var(--ink) !important;
-  font-family: var(--font-display) !important;
-  text-transform: uppercase !important;
-  letter-spacing: -0.045em !important;
 }
-.hero-desc, .nx-support, .intro-text { color: var(--ink-muted) !important; }
+.hero-desc, .nx-support, .intro-text, .disclaimer, .col-name, .chip-label,
+.site-network-label, .table-meta, .footer, footer {
+  color: var(--muted) !important;
+}
+.site-network-bar {
+  background: var(--surface) !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+.site-pill {
+  background: transparent !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--line-strong) !important;
+  border-radius: 0 !important;
+}
+.site-pill:hover {
+  background: var(--accent-soft) !important;
+  color: #FF5C33 !important;
+  border-color: #FF5C33 !important;
+}
+.site-pill.current {
+  background: #FF5C33 !important;
+  color: #000 !important;
+  border-color: #FF5C33 !important;
+}
+.chip {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  border-color: #FF5C33 !important;
+}
+.chip:hover, .chip.active {
+  background: #FF5C33 !important;
+  color: #000 !important;
+}
+#filters input, #filters select, #searchInput, #searchFilter, #etfSearch,
+input[type="text"], input[type="search"], select, textarea {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  border-color: var(--line-strong) !important;
+}
+#filters input::placeholder, input::placeholder {
+  color: var(--ink-faint) !important;
+}
+#etfTable, table.etf-table, .peer-table, #holdings-table, table.ret, table.hublist {
+  background: var(--surface) !important;
+  border-color: var(--line) !important;
+  color: var(--ink) !important;
+}
 #etfTable th, table th, thead th {
   background: #000 !important;
   color: #FF5C33 !important;
+  border-bottom-color: #FF5C33 !important;
 }
-
+#etfTable td, table td {
+  color: var(--ink) !important;
+  border-bottom-color: var(--line) !important;
+}
+#etfTable tbody tr:nth-child(even), table tbody tr:nth-child(even),
+tr:nth-child(even) {
+  background: #161618 !important;
+}
+#etfTable tbody tr:hover, table tbody tr:hover, tr:hover {
+  background: var(--accent-soft) !important;
+}
+.symbol, .symbol a, .symbol a:visited, .col-ticker, .col-ticker a,
+.yield, .decay, td:before, .tracker-link {
+  color: #FF5C33 !important;
+}
+.footer a, footer a, a.tracker-link {
+  color: #FF5C33 !important;
+}
+.stat, .faq, .rel, .info-card, .card, .panel {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+.vote-count, #voteMsg { color: #FF5C33 !important; }
+.back-to-top {
+  background: transparent !important;
+  color: #FF5C33 !important;
+  border: 1px solid #FF5C33 !important;
+}
+.back-to-top:hover {
+  background: #FF5C33 !important;
+  color: #000 !important;
+}
+.watchlist-btn, .header-pro-btn, #resetFilters, #resetBtn {
+  background: #FF5C33 !important;
+  color: #000 !important;
+  border-color: #FF5C33 !important;
+}
 </style>
 </head>
 <body>
@@ -748,7 +870,7 @@ header, .nx-header {
                 Contact email: <a href="mailto:advertise@mrvn.me">advertise@mrvn.me</a>
             </p>
             <p style="text-align: center;">
-                <strong><a href="https://dividendempire2000.gumroad.com/l/DividendTracker" target="_blank" style="color: #000000; font-weight: bold; text-decoration: none; border: 2px solid #B45309; padding: 4px 8px; border-radius: 4px; animation: glow 2s ease-in-out infinite;" class="tracker-link">Best Dividend Tracker</a></strong>
+                <strong><a href="https://dividendempire2000.gumroad.com/l/DividendTracker" target="_blank" style="color: #000000; font-weight: bold; text-decoration: none; border: 2px solid #FF5C33; padding: 4px 8px; border-radius: 4px; animation: glow 2s ease-in-out infinite;" class="tracker-link">Best Dividend Tracker</a></strong>
             </p>
         </footer>
     </div>
