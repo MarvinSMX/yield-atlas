@@ -1,19 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/blog</loc>
+    <loc>https://marvinsmx.github.io/yield-atlas//blog</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/advertise</loc>
+    <loc>https://marvinsmx.github.io/yield-atlas</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marvinsmx.github.io/yield-atlas//advertise</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marvinsmx.github.io/yield-atlas//etf</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marvinsmx.github.io/yield-atlas//FAQ</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marvinsmx.github.io/yield-atlas//match</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marvinsmx.github.io/yield-atlas//schd-dividend-history</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marvinsmx.github.io/yield-atlas//schd-etf-q1-2026-dividend</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marvinsmx.github.io/yield-atlas//stockanalysis</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://marvinsmx.github.io/yield-atlas//vym-etf-2026-dividend-dates</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -49,18 +91,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/etf</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/FAQ</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://marvinsmx.github.io/yield-atlas/fdvv-dividend-history.html</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -86,12 +116,6 @@
   </url>
   <url>
     <loc>https://marvinsmx.github.io/yield-atlas/jepq-etf-dividend-history</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/match</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -139,12 +163,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/schd-dividend-history</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://marvinsmx.github.io/yield-atlas/schd-etf-2026-dividend-dates</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -158,12 +176,6 @@
   </url>
   <url>
     <loc>https://marvinsmx.github.io/yield-atlas/schd-etf-holdings-2026</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/schd-etf-q1-2026-dividend</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -205,12 +217,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/stockanalysis</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://marvinsmx.github.io/yield-atlas/top-neos-etfs-2026.html</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -229,19 +235,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/vym-etf-2026-dividend-dates</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/privacy-policy</loc>
+    <loc>https://marvinsmx.github.io/yield-atlas//privacy-policy</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://marvinsmx.github.io/yield-atlas/terms-of-use</loc>
+    <loc>https://marvinsmx.github.io/yield-atlas//terms-of-use</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
