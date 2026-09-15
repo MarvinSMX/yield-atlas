@@ -36,27 +36,27 @@
     <style>
 /* mrvn ETF Network — shared design system (inline per repo for GitHub Pages) */
 :root {
-  /* Canonical tokens */
-  --bg: #09090B;
-  --surface: #121214;
-  --surface-2: #161618;
-  --ink: #F4F4F5;
-  --muted: #A1A1AA;
-  --line: #27272A;
-  --accent: #FF5C33;
-  /* Extended / legacy aliases (same values) */
+  /* Canonical tokens — light theme */
+  --bg: #F3F5F8;
+  --surface: #FFFFFF;
+  --surface-2: #EEF1F5;
+  --ink: #111827;
+  --muted: #5B6575;
+  --line: #D8DEE8;
+  --accent: #C2410C;
+  /* Extended / legacy aliases */
   --ink-muted: var(--muted);
-  --ink-faint: #71717A;
+  --ink-faint: #8B95A5;
   --paper: var(--bg);
   --paper-2: var(--surface);
-  --line-strong: #3F3F46;
-  --header: #000000;
-  --header-ink: #FAFAFA;
-  --accent-soft: rgba(255, 92, 51, 0.14);
-  --accent-hover: #FF8A66;
-  --on-accent: #000000;
-  --danger: #FF4D6A;
-  --pos: #FF5C33;
+  --line-strong: #B8C0CE;
+  --header: #FFFFFF;
+  --header-ink: #111827;
+  --accent-soft: rgba(194, 65, 12, 0.10);
+  --accent-hover: #9A3412;
+  --on-accent: #FFFFFF;
+  --danger: #DC2626;
+  --pos: #C2410C;
   --shell: 94%;
   --shell-max: 1320px;
   --radius: 0;
@@ -64,18 +64,18 @@
   --font-display: "Syne", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
   /* aliases for legacy site CSS */
-  --brand: var(--header);
-  --brand-dark: #000000;
-  --brand-mid: var(--surface);
-  --brand-lite: #1A1A1E;
+  --brand: var(--header-ink);
+  --brand-dark: #111827;
+  --brand-mid: var(--surface-2);
+  --brand-lite: #F8FAFC;
   --gold: var(--accent);
   --gold2: var(--accent-hover);
-  --navy: var(--header);
+  --navy: var(--header-ink);
   --primary: var(--accent);
   --green: var(--accent);
   --purple: var(--accent);
   --purple-bright: var(--accent-hover);
-  --purple-deep: var(--header);
+  --purple-deep: var(--header-ink);
   --bg-primary: var(--bg);
   --bg-secondary: var(--surface);
   --bg-panel: var(--surface);
@@ -111,7 +111,7 @@ body {
 a { color: var(--accent); }
 a:hover { color: var(--accent-hover); }
 
-/* Wordmark header */
+/* Wordmark header — light */
 .nx-header, header.nx-header, body > header:not(.nx-skip) {
   width: 100%;
   background: var(--header);
@@ -137,7 +137,7 @@ a:hover { color: var(--accent-hover); }
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(250, 250, 250, 0.55);
+  color: var(--muted);
   margin-top: 0.45rem;
 }
 .logo-link { text-decoration: none; display: inline-block; }
@@ -153,7 +153,7 @@ a:hover { color: var(--accent-hover); }
   align-items: center;
   gap: 0.35rem;
   padding: 0.45rem 0.85rem;
-  border: 1px solid rgba(255,255,255,0.28);
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius);
   color: var(--header-ink);
   background: transparent;
@@ -392,8 +392,8 @@ input[type="text"], select {
   overflow: hidden;
 }
 #etfTable th, table th, thead th {
-  background: #000 !important;
-  color: var(--accent) !important;
+  background: var(--header-ink) !important;
+  color: #FFFFFF !important;
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 0.68rem;
@@ -512,9 +512,9 @@ input[type="text"], select {
 
 :root {
   --teal-900:#0D3D38; --teal-700:#0F766E; --teal-500:#14B8A6;
-  --green-500:#FF5C33; --red-500:#EF4444;
-  --slate-900:#000000; --slate-800:#1A1A1E; --slate-700:#334155;
-  --slate-500:#64748B; --slate-50:#FAFAFA; --white:#FFFFFF;
+  --green-500:#C2410C; --red-500:#EF4444;
+  --slate-900:#000000; --slate-800:#EEF1F5; --slate-700:#334155;
+  --slate-500:#64748B; --slate-50:#111827; --white:#FFFFFF;
   --font:'Syne',system-ui,sans-serif; --mono:'DM Mono',monospace;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -528,14 +528,14 @@ body { font-family:var(--font); background:var(--slate-50); color:var(--slate-80
 .top-bar p { font-size:15.5px; opacity:0.9; }
 
 .try-pro-btn {
-  display:block; margin:12px auto 0; padding:10px 24px; background:#FF5C33; color:white;
+  display:block; margin:12px auto 0; padding:10px 24px; background:#C2410C; color:white;
   border:none; border-radius:999px; font-weight:700; font-size:15px; cursor:pointer;
   box-shadow:0 4px 12px rgba(16,185,129,0.3);
 }
 .try-pro-btn:hover { background:#0F766E; transform:translateY(-1px); }
 
 .swipe-container { max-width:520px; margin:16px auto 4px; position:relative; min-height:510px; }
-.etf-card { position:absolute; inset:0; background:#121214; border-radius:28px; overflow:hidden; box-shadow:0 25px 70px -10px rgba(15,23,42,.22); display:flex; flex-direction:column; transition:all .45s cubic-bezier(0.34,1.56,0.64,1); }
+.etf-card { position:absolute; inset:0; background:#FFFFFF; border-radius:28px; overflow:hidden; box-shadow:0 25px 70px -10px rgba(15,23,42,.22); display:flex; flex-direction:column; transition:all .45s cubic-bezier(0.34,1.56,0.64,1); }
 .etf-card.swipe-left { transform:translateX(-440px) rotate(-26deg) !important; opacity:0; }
 .etf-card.swipe-right { transform:translateX(440px) rotate(26deg) !important; opacity:0; }
 
@@ -543,13 +543,13 @@ body { font-family:var(--font); background:var(--slate-50); color:var(--slate-80
 .ticker-big { font-size: clamp(46px, 10vw, 66px); font-weight:700; font-family:var(--mono); letter-spacing:-4px; line-height:1; }
 .etf-name { font-size:18.5px; font-weight:600; margin-top:4px; opacity:0.95; }
 
-.main-focus { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:16px; background:#121214; }
+.main-focus { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:16px; background:#FFFFFF; }
 .focus-box { background:#F0FDFA; border-radius:16px; padding:14px 10px; text-align:center; border:2px solid #14B8A6; }
-.focus-box.yield { border-color:#FF5C33; }
+.focus-box.yield { border-color:#C2410C; }
 .focus-val { font-size:27px; font-weight:700; font-family:var(--mono); line-height:1; }
 .focus-label { font-size:11px; font-weight:700; color:#0F766E; text-transform:uppercase; letter-spacing:0.7px; margin-top:4px; }
 
-.stats-bar { display:grid; grid-template-columns:repeat(4,1fr); gap:4px; padding:12px 20px; background:#121214; border-bottom:1px solid #E2E8F0; }
+.stats-bar { display:grid; grid-template-columns:repeat(4,1fr); gap:4px; padding:12px 20px; background:#FFFFFF; border-bottom:1px solid #E2E8F0; }
 .stat-box { text-align:center; }
 .stat-val { font-size:16px; font-weight:700; font-family:var(--mono); color:var(--teal-700); }
 .stat-lbl { font-size:9px; font-weight:600; color:var(--slate-500); text-transform:uppercase; letter-spacing:0.5px; }
@@ -562,7 +562,7 @@ body { font-family:var(--font); background:var(--slate-50); color:var(--slate-80
 
 .actions { display:flex; justify-content:center; gap:36px; padding:8px 20px 24px; }
 .action-btn { width:72px; height:72px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:34px; box-shadow:0 10px 30px rgba(0,0,0,.15); transition:all .2s; border:5px solid white; }
-#noBtn { background:#121214; color:var(--red-500); }
+#noBtn { background:#FFFFFF; color:var(--red-500); }
 #yesBtn { background:var(--green-500); color:white; }
 
 .progress-bar { height:6px; background:var(--teal-100); margin:0 40px 8px; border-radius:999px; overflow:hidden; }
@@ -570,147 +570,158 @@ body { font-family:var(--font); background:var(--slate-50); color:var(--slate-80
 
 /* Offer Modal */
 #offerModal { position:fixed; inset:0; background:rgba(15,23,42,.85); display:none; align-items:center; justify-content:center; z-index:700; }
-#offerContent { background:#121214; max-width:420px; width:92%; border-radius:24px; padding:32px 28px; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,.3); }
+#offerContent { background:#FFFFFF; max-width:420px; width:92%; border-radius:24px; padding:32px 28px; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,.3); }
 
 
-/* Force dark network chrome */
+
+/* Force light network chrome */
 :root {
-  --bg: #09090B !important;
-  --surface: #121214 !important;
-  --ink: #F4F4F5 !important;
-  --muted: #A1A1AA !important;
-  --line: #27272A !important;
-  --accent: #FF5C33 !important;
-  --paper: #09090B !important;
-  --paper-2: #121214 !important;
-  --ink-muted: #A1A1AA !important;
-  --text-primary: #F4F4F5 !important;
-  --text-secondary: #A1A1AA !important;
-  --bg-primary: #09090B !important;
-  --bg-secondary: #121214 !important;
-  --gold: #FF5C33 !important;
+  --bg: #F3F5F8 !important;
+  --surface: #FFFFFF !important;
+  --surface-2: #EEF1F5 !important;
+  --ink: #111827 !important;
+  --muted: #5B6575 !important;
+  --line: #D8DEE8 !important;
+  --accent: #C2410C !important;
+  --paper: #F3F5F8 !important;
+  --paper-2: #FFFFFF !important;
+  --ink-muted: #5B6575 !important;
+  --ink-faint: #8B95A5 !important;
+  --header: #FFFFFF !important;
+  --header-ink: #111827 !important;
+  --text-primary: #111827 !important;
+  --text-secondary: #5B6575 !important;
+  --bg-primary: #F3F5F8 !important;
+  --bg-secondary: #FFFFFF !important;
+  --gold: #C2410C !important;
   --gold2: var(--accent-hover) !important;
-  --green: #FF5C33 !important;
-  --primary: #FF5C33 !important;
-  --navy: #000000 !important;
-  --brand: #000000 !important;
-  --light: #121214 !important;
+  --green: #C2410C !important;
+  --primary: #C2410C !important;
+  --navy: #111827 !important;
+  --brand: #111827 !important;
+  --light: #FFFFFF !important;
+  --on-accent: #FFFFFF !important;
 }
 body {
-  background: var(--bg) !important;
-  color: var(--ink) !important;
+  background: #F3F5F8 !important;
+  color: #111827 !important;
 }
 header, .nx-header {
-  background: var(--header) !important;
-  color: var(--header-ink) !important;
-  border-bottom: 2px solid #FF5C33 !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-bottom: 2px solid #C2410C !important;
 }
-.logo, .nx-logo, .logo-text { color: var(--header-ink) !important; }
-.logo span, .nx-logo span { color: #FF5C33 !important; }
-.logo-sub, .nx-tagline { color: rgba(250,250,250,0.55) !important; }
-.header-link, .nx-nav a { color: var(--header-ink) !important; }
+.logo, .nx-logo, .logo-text { color: #111827 !important; }
+.logo span, .nx-logo span { color: #C2410C !important; }
+.logo-sub, .nx-tagline { color: #5B6575 !important; }
+.header-link, .nx-nav a {
+  color: #111827 !important;
+  border-color: #B8C0CE !important;
+  background: transparent !important;
+}
 .header-link:hover, .nx-nav a:hover {
-  background: #FF5C33 !important;
-  color: #000 !important;
-  border-color: #FF5C33 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
+  border-color: #C2410C !important;
 }
 .hero, .nx-hero, main > .hero, section.hero, .main-h1 {
-  background: var(--bg) !important;
-  color: var(--ink) !important;
+  background: #F3F5F8 !important;
+  color: #111827 !important;
 }
 .hero h1, .nx-hero h1, section.hero h1, h1 {
-  color: var(--ink) !important;
+  color: #111827 !important;
 }
 .hero-desc, .nx-support, .intro-text, .disclaimer, .col-name, .chip-label,
 .site-network-label, .table-meta, .footer, footer {
-  color: var(--muted) !important;
+  color: #5B6575 !important;
 }
 .site-network-bar {
-  background: var(--surface) !important;
-  border-bottom: 1px solid var(--line) !important;
+  background: #FFFFFF !important;
+  border-bottom: 1px solid #D8DEE8 !important;
 }
 .site-pill {
   background: transparent !important;
-  color: var(--ink) !important;
-  border: 1px solid var(--line-strong) !important;
+  color: #111827 !important;
+  border: 1px solid #B8C0CE !important;
   border-radius: 0 !important;
 }
 .site-pill:hover {
-  background: var(--accent-soft) !important;
-  color: #FF5C33 !important;
-  border-color: #FF5C33 !important;
+  background: rgba(0,0,0,0.04) !important;
+  color: #C2410C !important;
+  border-color: #C2410C !important;
 }
 .site-pill.current {
-  background: #FF5C33 !important;
-  color: #000 !important;
-  border-color: #FF5C33 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
+  border-color: #C2410C !important;
 }
 .chip {
-  background: var(--surface) !important;
-  color: var(--ink) !important;
-  border-color: #FF5C33 !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #C2410C !important;
 }
 .chip:hover, .chip.active {
-  background: #FF5C33 !important;
-  color: #000 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
 }
 #filters input, #filters select, #searchInput, #searchFilter, #etfSearch,
 input[type="text"], input[type="search"], select, textarea {
-  background: var(--surface) !important;
-  color: var(--ink) !important;
-  border-color: var(--line-strong) !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #B8C0CE !important;
 }
 #filters input::placeholder, input::placeholder {
-  color: var(--ink-faint) !important;
+  color: #8B95A5 !important;
 }
 #etfTable, table.etf-table, .peer-table, #holdings-table, table.ret, table.hublist {
-  background: var(--surface) !important;
-  border-color: var(--line) !important;
-  color: var(--ink) !important;
+  background: #FFFFFF !important;
+  border-color: #D8DEE8 !important;
+  color: #111827 !important;
 }
 #etfTable th, table th, thead th {
-  background: #000 !important;
-  color: #FF5C33 !important;
-  border-bottom-color: #FF5C33 !important;
+  background: #111827 !important;
+  color: #FFFFFF !important;
+  border-bottom-color: #C2410C !important;
 }
 #etfTable td, table td {
-  color: var(--ink) !important;
-  border-bottom-color: var(--line) !important;
+  color: #111827 !important;
+  border-bottom-color: #D8DEE8 !important;
 }
 #etfTable tbody tr:nth-child(even), table tbody tr:nth-child(even),
 tr:nth-child(even) {
-  background: #161618 !important;
+  background: #EEF1F5 !important;
 }
 #etfTable tbody tr:hover, table tbody tr:hover, tr:hover {
-  background: var(--accent-soft) !important;
+  background: rgba(0,0,0,0.03) !important;
 }
 .symbol, .symbol a, .symbol a:visited, .col-ticker, .col-ticker a,
 .yield, .decay, td:before, .tracker-link {
-  color: #FF5C33 !important;
+  color: #C2410C !important;
 }
 .footer a, footer a, a.tracker-link {
-  color: #FF5C33 !important;
+  color: #C2410C !important;
 }
 .stat, .faq, .rel, .info-card, .card, .panel {
-  background: var(--surface) !important;
-  color: var(--ink) !important;
-  border-color: var(--line) !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #D8DEE8 !important;
 }
-.vote-count, #voteMsg { color: #FF5C33 !important; }
+.vote-count, #voteMsg { color: #C2410C !important; }
 .back-to-top {
   background: transparent !important;
-  color: #FF5C33 !important;
-  border: 1px solid #FF5C33 !important;
+  color: #C2410C !important;
+  border: 1px solid #C2410C !important;
 }
 .back-to-top:hover {
-  background: #FF5C33 !important;
-  color: #000 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
 }
 .watchlist-btn, .header-pro-btn, #resetFilters, #resetBtn {
-  background: #FF5C33 !important;
-  color: #000 !important;
-  border-color: #FF5C33 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
+  border-color: #C2410C !important;
 }
+
 </style>
 </head>
 <body>
@@ -743,7 +754,7 @@ tr:nth-child(even) {
 
 <!-- New Button -->
 <div style="text-align:center; margin:8px 0 12px;">
-  <button onclick="window.open('https://marvinsmx.github.io/yield-atlas-pro/','_blank')" style="padding:10px 28px; background:#FF5C33; color:white; border:none; border-radius:999px; font-weight:700; font-size:15.5px; cursor:pointer; box-shadow:0 4px 12px rgba(16,185,129,0.3);">
+  <button onclick="window.open('https://marvinsmx.github.io/yield-atlas-pro/','_blank')" style="padding:10px 28px; background:#C2410C; color:white; border:none; border-radius:999px; font-weight:700; font-size:15.5px; cursor:pointer; box-shadow:0 4px 12px rgba(16,185,129,0.3);">
     Try YieldAtlasPRO.com →
   </button>
 </div>
@@ -752,8 +763,8 @@ tr:nth-child(even) {
   <div style="display:flex;justify-content:space-between;align-items:center;margin:10px 0 6px;font-size:14px">
     <div>Remaining: <strong id="remaining">42</strong></div>
     <div>
-      <button onclick="newCard()" style="padding:6px 16px;background:#121214;border:2px solid var(--teal-400);color:var(--teal-700);border-radius:999px;font-weight:600;margin-right:8px">New Card</button>
-      <button onclick="shuffleDeck()" style="padding:6px 16px;background:#121214;border:2px solid var(--teal-400);color:var(--teal-700);border-radius:999px;font-weight:600">🔀 Shuffle</button>
+      <button onclick="newCard()" style="padding:6px 16px;background:#FFFFFF;border:2px solid var(--teal-400);color:var(--teal-700);border-radius:999px;font-weight:600;margin-right:8px">New Card</button>
+      <button onclick="shuffleDeck()" style="padding:6px 16px;background:#FFFFFF;border:2px solid var(--teal-400);color:var(--teal-700);border-radius:999px;font-weight:600">🔀 Shuffle</button>
     </div>
   </div>
 
@@ -772,14 +783,14 @@ tr:nth-child(even) {
     <h2 id="offerTitle" style="font-size:22px;margin-bottom:16px"></h2>
     <p id="offerText" style="margin-bottom:28px;line-height:1.5;color:#334155"></p>
     <div style="display:flex;gap:12px">
-      <button onclick="goToMainSite()" style="flex:1;padding:16px;background:#FF5C33;color:white;border:none;border-radius:16px;font-weight:700;font-size:17px">Take Me There →</button>
+      <button onclick="goToMainSite()" style="flex:1;padding:16px;background:#C2410C;color:white;border:none;border-radius:16px;font-weight:700;font-size:17px">Take Me There →</button>
       <button onclick="closeOfferModal()" style="flex:1;padding:16px;background:#E2E8F0;color:#334155;border:none;border-radius:16px;font-weight:700">No Thanks</button>
     </div>
   </div>
 </div>
 
 <!-- Saved Panel -->
-<div id="savedPanel" style="position:fixed;bottom:20px;right:20px;background:#121214;border-radius:20px;box-shadow:0 20px 60px -10px rgba(0,0,0,.25);width:340px;max-height:560px;overflow:hidden;z-index:500;display:none">
+<div id="savedPanel" style="position:fixed;bottom:20px;right:20px;background:#FFFFFF;border-radius:20px;box-shadow:0 20px 60px -10px rgba(0,0,0,.25);width:340px;max-height:560px;overflow:hidden;z-index:500;display:none">
   <div style="padding:16px 22px;background:var(--teal-700);color:white;display:flex;justify-content:space-between;align-items:center">
     <span>❤️ My Watchlist</span>
     <span onclick="hideSaved()" style="cursor:pointer;font-size:24px">✕</span>
@@ -789,7 +800,7 @@ tr:nth-child(even) {
 
 <!-- Detail Modal -->
 <div id="detailModal" style="position:fixed;inset:0;background:rgba(15,23,42,.8);display:none;align-items:center;justify-content:center;z-index:600">
-  <div style="background:#121214;width:94%;max-width:520px;border-radius:24px;max-height:92vh;overflow:auto">
+  <div style="background:#FFFFFF;width:94%;max-width:520px;border-radius:24px;max-height:92vh;overflow:auto">
     <div style="padding:24px 28px;background:var(--teal-700);color:white;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0">
       <div id="modalTickerBig" style="font-size:32px;font-family:var(--mono);font-weight:700"></div>
       <span onclick="closeModal()" style="font-size:32px;cursor:pointer">✕</span>
@@ -866,7 +877,7 @@ function renderCurrentCard() {
 
   if (currentIndex >= deck.length) {
     container.innerHTML = `
-      <div style="height:480px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#121214;border-radius:28px;box-shadow:0 25px 70px -10px rgba(0,0,0,.15);text-align:center;padding:40px">
+      <div style="height:480px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#FFFFFF;border-radius:28px;box-shadow:0 25px 70px -10px rgba(0,0,0,.15);text-align:center;padding:40px">
         <h2 style="font-size:32px">🎉 All done!</h2>
         <p style="margin:16px 0 30px;color:#64748B">Refresh for a brand new deck</p>
         <button onclick="location.reload()" style="padding:14px 40px;background:#0F766E;color:white;border:none;border-radius:999px;font-size:17px">🔄 New Deck</button>
@@ -1059,7 +1070,7 @@ function showDetail(symbol) {
     <h2 style="margin-bottom:20px;font-size:23px">${etf.name}</h2>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px">
       <div style="background:#F0FDFA;padding:20px;border-radius:16px;text-align:center">
-        <div style="font-size:42px;font-weight:700;color:#FF5C33">${etf.yield}%</div>
+        <div style="font-size:42px;font-weight:700;color:#C2410C">${etf.yield}%</div>
         <div style="font-size:13px;color:#0F766E">YIELD</div>
       </div>
       <div style="background:#F0FDFA;padding:20px;border-radius:16px;text-align:center">
@@ -1067,7 +1078,7 @@ function showDetail(symbol) {
         <div style="font-size:13px;color:#0F766E">TOTAL RETURN</div>
       </div>
     </div>
-    <div style="background:#121214;border:1px solid #E2E8F0;border-radius:16px;padding:22px">
+    <div style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:16px;padding:22px">
       <div class="info-row"><span class="info-label">Provider</span><span class="info-value">${etf.provider}</span></div>
       <div class="info-row"><span class="info-label">Expense Ratio</span><span class="info-value">${etf.expRatio}%</span></div>
       <div class="info-row"><span class="info-label">AUM</span><span class="info-value">${etf.aum}</span></div>
@@ -1078,7 +1089,7 @@ function showDetail(symbol) {
       <div class="info-row"><span class="info-label">Rating</span><span class="info-value">${etf.rating}</span></div>
     </div>
     <div style="margin-top:32px;display:flex;gap:12px">
-      <button onclick="saveFromModal('${etf.symbol}');closeModal()" style="flex:1;padding:18px;background:#FF5C33;color:white;border:none;border-radius:16px;font-weight:700">❤️ Save to Watchlist</button>
+      <button onclick="saveFromModal('${etf.symbol}');closeModal()" style="flex:1;padding:18px;background:#C2410C;color:white;border:none;border-radius:16px;font-weight:700">❤️ Save to Watchlist</button>
       <button onclick="closeModal()" style="flex:1;padding:18px;background:#E2E8F0;color:#334155;border:none;border-radius:16px;font-weight:700">Close</button>
     </div>
   `;

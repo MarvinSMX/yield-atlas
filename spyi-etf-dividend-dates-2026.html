@@ -80,27 +80,27 @@
     <style>
 /* mrvn ETF Network — shared design system (inline per repo for GitHub Pages) */
 :root {
-  /* Canonical tokens */
-  --bg: #09090B;
-  --surface: #121214;
-  --surface-2: #161618;
-  --ink: #F4F4F5;
-  --muted: #A1A1AA;
-  --line: #27272A;
-  --accent: #FF5C33;
-  /* Extended / legacy aliases (same values) */
+  /* Canonical tokens — light theme */
+  --bg: #F3F5F8;
+  --surface: #FFFFFF;
+  --surface-2: #EEF1F5;
+  --ink: #111827;
+  --muted: #5B6575;
+  --line: #D8DEE8;
+  --accent: #C2410C;
+  /* Extended / legacy aliases */
   --ink-muted: var(--muted);
-  --ink-faint: #71717A;
+  --ink-faint: #8B95A5;
   --paper: var(--bg);
   --paper-2: var(--surface);
-  --line-strong: #3F3F46;
-  --header: #000000;
-  --header-ink: #FAFAFA;
-  --accent-soft: rgba(255, 92, 51, 0.14);
-  --accent-hover: #FF8A66;
-  --on-accent: #000000;
-  --danger: #FF4D6A;
-  --pos: #FF5C33;
+  --line-strong: #B8C0CE;
+  --header: #FFFFFF;
+  --header-ink: #111827;
+  --accent-soft: rgba(194, 65, 12, 0.10);
+  --accent-hover: #9A3412;
+  --on-accent: #FFFFFF;
+  --danger: #DC2626;
+  --pos: #C2410C;
   --shell: 94%;
   --shell-max: 1320px;
   --radius: 0;
@@ -108,18 +108,18 @@
   --font-display: "Syne", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
   /* aliases for legacy site CSS */
-  --brand: var(--header);
-  --brand-dark: #000000;
-  --brand-mid: var(--surface);
-  --brand-lite: #1A1A1E;
+  --brand: var(--header-ink);
+  --brand-dark: #111827;
+  --brand-mid: var(--surface-2);
+  --brand-lite: #F8FAFC;
   --gold: var(--accent);
   --gold2: var(--accent-hover);
-  --navy: var(--header);
+  --navy: var(--header-ink);
   --primary: var(--accent);
   --green: var(--accent);
   --purple: var(--accent);
   --purple-bright: var(--accent-hover);
-  --purple-deep: var(--header);
+  --purple-deep: var(--header-ink);
   --bg-primary: var(--bg);
   --bg-secondary: var(--surface);
   --bg-panel: var(--surface);
@@ -155,7 +155,7 @@ body {
 a { color: var(--accent); }
 a:hover { color: var(--accent-hover); }
 
-/* Wordmark header */
+/* Wordmark header — light */
 .nx-header, header.nx-header, body > header:not(.nx-skip) {
   width: 100%;
   background: var(--header);
@@ -181,7 +181,7 @@ a:hover { color: var(--accent-hover); }
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(250, 250, 250, 0.55);
+  color: var(--muted);
   margin-top: 0.45rem;
 }
 .logo-link { text-decoration: none; display: inline-block; }
@@ -197,7 +197,7 @@ a:hover { color: var(--accent-hover); }
   align-items: center;
   gap: 0.35rem;
   padding: 0.45rem 0.85rem;
-  border: 1px solid rgba(255,255,255,0.28);
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius);
   color: var(--header-ink);
   background: transparent;
@@ -436,8 +436,8 @@ input[type="text"], select {
   overflow: hidden;
 }
 #etfTable th, table th, thead th {
-  background: #000 !important;
-  color: var(--accent) !important;
+  background: var(--header-ink) !important;
+  color: #FFFFFF !important;
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 0.68rem;
@@ -556,7 +556,7 @@ input[type="text"], select {
 
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html,body{overflow-x:hidden!important;width:100%;position:relative}
-    :root{--green-dark:#000000;--green-mid:#FF5C33;--bg:#09090B;--white:#fff;--text:#333;--text-mid:#444;--text-light:#666;--border:#c8e6d8;--shadow:0 4px 15px rgba(0,0,0,.12);--red:#e74c3c;--mint:#7dffb0;--gold:#d4a017}
+    :root{--green-dark:#000000;--green-mid:#C2410C;--bg:#F3F5F8;--white:#fff;--text:#333;--text-mid:#444;--text-light:#666;--border:#c8e6d8;--shadow:0 4px 15px rgba(0,0,0,.12);--red:#e74c3c;--mint:#7dffb0;--gold:#d4a017}
     body{font-family:'Syne',Arial,sans-serif;background:var(--bg);color:var(--text);display:flex;flex-direction:column;align-items:center;min-height:100vh}
     header{background:var(--green-dark);padding:15px 20px;color:#fff;text-align:center;width:100%;box-shadow:0 2px 5px rgba(0,0,0,.2);background-image:url('https://www.transparenttextures.com/patterns/noise.png');background-blend-mode:overlay;cursor:pointer}
     .logo{font-size:clamp(22px,6vw,36px);font-weight:900;color:#fff}
@@ -582,7 +582,7 @@ input[type="text"], select {
     .ab-cell{background:#f2fbf5;border:1px solid var(--border);border-radius:6px;padding:11px 14px}
     .ab-cell dt{font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;color:var(--text-light);font-weight:700;margin-bottom:3px}
     .ab-cell dd{font-size:1.08rem;font-weight:900;color:var(--green-dark)}
-    .ab-cell.hot{background:#1212148e6;border-color:#e8cc80}.ab-cell.hot dd{color:#9a6f0a}
+    .ab-cell.hot{background:#FFFFFF8e6;border-color:#e8cc80}.ab-cell.hot dd{color:#9a6f0a}
     .hero-block{background:linear-gradient(var(--green-dark),#255046);border-radius:10px;padding:44px 32px 38px;text-align:center;margin:14px 0 22px;box-shadow:var(--shadow);position:relative;overflow:hidden}
     .hero-block::before{content:'';position:absolute;inset:0;background-image:url('https://www.transparenttextures.com/patterns/noise.png');opacity:.35;pointer-events:none}
     .hero-eyebrow{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#aff5c8;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;padding:5px 15px;border-radius:4px;margin-bottom:14px;font-weight:700;position:relative;z-index:1}
@@ -621,7 +621,7 @@ input[type="text"], select {
     td.amt2.tbd{color:var(--text-light);font-weight:700;font-style:italic;font-size:.83rem}
     .st{display:inline-block;font-size:.68rem;font-weight:900;padding:3px 9px;border-radius:3px;letter-spacing:.04em}
     .st.paid{background:#e3f3ee;color:#1c6b57}.st.up2{background:#eef2f7;color:#4a6484}
-    .st.decl{background:#1212144d6;color:#8a6100}
+    .st.decl{background:#FFFFFF4d6;color:#8a6100}
     td.amt{white-space:nowrap;width:150px}
     .amt-num{font-weight:900;color:var(--green-dark);font-size:.92rem;display:inline-block;min-width:64px}
     .amt-bar{display:inline-block;width:48px;height:6px;background:#eef7f2;border-radius:3px;margin-left:7px;vertical-align:middle;position:relative;overflow:hidden}
@@ -629,7 +629,7 @@ input[type="text"], select {
     td.chg{font-weight:900;font-size:.85rem;white-space:nowrap}
     td.chg.up{color:#1c8c5a}td.chg.dn{color:#c0392b}td.chg.fl{color:#aaa}
     .tag{display:inline-block;font-size:.6rem;font-weight:900;padding:2px 7px;border-radius:3px;letter-spacing:.06em;margin-right:4px}
-    .tag.ath{background:var(--gold);color:#fff}.tag.low{background:#eee;color:#71717A}.tag.ye{background:#e8eef7;color:#3a5a8c}
+    .tag.ath{background:var(--gold);color:#fff}.tag.low{background:#eee;color:#8B95A5}.tag.ye{background:#e8eef7;color:#3a5a8c}
     .fpills{display:flex;gap:7px;flex-wrap:wrap;padding:14px 18px;background:var(--white);border:3px solid var(--green-mid);border-bottom:none;border-radius:8px 8px 0 0}
     .fpill{font-family:'Syne',sans-serif;font-size:.78rem;font-weight:700;padding:6px 13px;border-radius:20px;border:2px solid var(--border);background:#f8fdfa;color:var(--green-mid);cursor:pointer;transition:all .16s}
     .fpill:hover{border-color:var(--green-mid);background:#e8f7f0}
@@ -672,14 +672,14 @@ input[type="text"], select {
     .faq-a{padding:0 20px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .25s;color:var(--text-mid);font-size:.95rem;line-height:1.65}
     .faq-item.open .faq-a{max-height:460px;padding:13px 20px 18px;border-top:1px solid var(--border)}
     .disclaimer-box{border-left:4px solid #ccc;background:var(--white);padding:16px 20px;margin:24px 0 12px;border-radius:0 6px 6px 0;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-    .disclaimer-box h3{color:#71717A;font-size:.9rem;margin-bottom:5px}
+    .disclaimer-box h3{color:#8B95A5;font-size:.9rem;margin-bottom:5px}
     .disclaimer-box p{color:var(--text-light);font-size:.83rem;line-height:1.6}
     .share-buttons{margin:18px auto 8px;display:flex;gap:12px;justify-content:center}
     .share-btn{display:flex;align-items:center;gap:6px;padding:7px 13px;border-radius:6px;font-weight:700;font-size:.82em;color:#fff;text-decoration:none;box-shadow:0 3px 8px rgba(0,0,0,.2);transition:all .2s}
     .share-btn:hover{transform:translateY(-2px)}.fb{background:#1877F2}.xbtn{background:#000}
     .share-btn svg{width:15px;height:15px;fill:currentColor}
     .back-to-top{display:block;margin:10px auto 0;padding:7px 16px;background:var(--green-mid);color:#fff;font-weight:700;font-size:.85rem;border:none;border-radius:6px;cursor:pointer;box-shadow:0 3px 8px rgba(0,0,0,.2)}
-    .footer{font-size:.9em;color:#A1A1AA;margin:20px auto 10px;padding-top:10px;border-top:1px solid #27272A;max-width:960px;width:94%;text-align:center}
+    .footer{font-size:.9em;color:#5B6575;margin:20px auto 10px;padding-top:10px;border-top:1px solid #D8DEE8;max-width:960px;width:94%;text-align:center}
     .footer a{color:var(--green-dark);text-decoration:none}.footer a:hover{text-decoration:underline}
     .tracker-link{border:2px solid var(--green-mid);padding:4px 8px;border-radius:4px;animation:glow 2s infinite}
     @keyframes glow{0%,100%{box-shadow:0 0 5px rgba(255,92,51,.3)}50%{box-shadow:0 0 8px rgba(255,92,51,.6)}}
@@ -687,144 +687,155 @@ input[type="text"], select {
     @media(max-width:420px){.yr-grid{grid-template-columns:1fr}}
   
 
-/* Force dark network chrome */
+
+/* Force light network chrome */
 :root {
-  --bg: #09090B !important;
-  --surface: #121214 !important;
-  --ink: #F4F4F5 !important;
-  --muted: #A1A1AA !important;
-  --line: #27272A !important;
-  --accent: #FF5C33 !important;
-  --paper: #09090B !important;
-  --paper-2: #121214 !important;
-  --ink-muted: #A1A1AA !important;
-  --text-primary: #F4F4F5 !important;
-  --text-secondary: #A1A1AA !important;
-  --bg-primary: #09090B !important;
-  --bg-secondary: #121214 !important;
-  --gold: #FF5C33 !important;
+  --bg: #F3F5F8 !important;
+  --surface: #FFFFFF !important;
+  --surface-2: #EEF1F5 !important;
+  --ink: #111827 !important;
+  --muted: #5B6575 !important;
+  --line: #D8DEE8 !important;
+  --accent: #C2410C !important;
+  --paper: #F3F5F8 !important;
+  --paper-2: #FFFFFF !important;
+  --ink-muted: #5B6575 !important;
+  --ink-faint: #8B95A5 !important;
+  --header: #FFFFFF !important;
+  --header-ink: #111827 !important;
+  --text-primary: #111827 !important;
+  --text-secondary: #5B6575 !important;
+  --bg-primary: #F3F5F8 !important;
+  --bg-secondary: #FFFFFF !important;
+  --gold: #C2410C !important;
   --gold2: var(--accent-hover) !important;
-  --green: #FF5C33 !important;
-  --primary: #FF5C33 !important;
-  --navy: #000000 !important;
-  --brand: #000000 !important;
-  --light: #121214 !important;
+  --green: #C2410C !important;
+  --primary: #C2410C !important;
+  --navy: #111827 !important;
+  --brand: #111827 !important;
+  --light: #FFFFFF !important;
+  --on-accent: #FFFFFF !important;
 }
 body {
-  background: var(--bg) !important;
-  color: var(--ink) !important;
+  background: #F3F5F8 !important;
+  color: #111827 !important;
 }
 header, .nx-header {
-  background: var(--header) !important;
-  color: var(--header-ink) !important;
-  border-bottom: 2px solid #FF5C33 !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-bottom: 2px solid #C2410C !important;
 }
-.logo, .nx-logo, .logo-text { color: var(--header-ink) !important; }
-.logo span, .nx-logo span { color: #FF5C33 !important; }
-.logo-sub, .nx-tagline { color: rgba(250,250,250,0.55) !important; }
-.header-link, .nx-nav a { color: var(--header-ink) !important; }
+.logo, .nx-logo, .logo-text { color: #111827 !important; }
+.logo span, .nx-logo span { color: #C2410C !important; }
+.logo-sub, .nx-tagline { color: #5B6575 !important; }
+.header-link, .nx-nav a {
+  color: #111827 !important;
+  border-color: #B8C0CE !important;
+  background: transparent !important;
+}
 .header-link:hover, .nx-nav a:hover {
-  background: #FF5C33 !important;
-  color: #000 !important;
-  border-color: #FF5C33 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
+  border-color: #C2410C !important;
 }
 .hero, .nx-hero, main > .hero, section.hero, .main-h1 {
-  background: var(--bg) !important;
-  color: var(--ink) !important;
+  background: #F3F5F8 !important;
+  color: #111827 !important;
 }
 .hero h1, .nx-hero h1, section.hero h1, h1 {
-  color: var(--ink) !important;
+  color: #111827 !important;
 }
 .hero-desc, .nx-support, .intro-text, .disclaimer, .col-name, .chip-label,
 .site-network-label, .table-meta, .footer, footer {
-  color: var(--muted) !important;
+  color: #5B6575 !important;
 }
 .site-network-bar {
-  background: var(--surface) !important;
-  border-bottom: 1px solid var(--line) !important;
+  background: #FFFFFF !important;
+  border-bottom: 1px solid #D8DEE8 !important;
 }
 .site-pill {
   background: transparent !important;
-  color: var(--ink) !important;
-  border: 1px solid var(--line-strong) !important;
+  color: #111827 !important;
+  border: 1px solid #B8C0CE !important;
   border-radius: 0 !important;
 }
 .site-pill:hover {
-  background: var(--accent-soft) !important;
-  color: #FF5C33 !important;
-  border-color: #FF5C33 !important;
+  background: rgba(0,0,0,0.04) !important;
+  color: #C2410C !important;
+  border-color: #C2410C !important;
 }
 .site-pill.current {
-  background: #FF5C33 !important;
-  color: #000 !important;
-  border-color: #FF5C33 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
+  border-color: #C2410C !important;
 }
 .chip {
-  background: var(--surface) !important;
-  color: var(--ink) !important;
-  border-color: #FF5C33 !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #C2410C !important;
 }
 .chip:hover, .chip.active {
-  background: #FF5C33 !important;
-  color: #000 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
 }
 #filters input, #filters select, #searchInput, #searchFilter, #etfSearch,
 input[type="text"], input[type="search"], select, textarea {
-  background: var(--surface) !important;
-  color: var(--ink) !important;
-  border-color: var(--line-strong) !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #B8C0CE !important;
 }
 #filters input::placeholder, input::placeholder {
-  color: var(--ink-faint) !important;
+  color: #8B95A5 !important;
 }
 #etfTable, table.etf-table, .peer-table, #holdings-table, table.ret, table.hublist {
-  background: var(--surface) !important;
-  border-color: var(--line) !important;
-  color: var(--ink) !important;
+  background: #FFFFFF !important;
+  border-color: #D8DEE8 !important;
+  color: #111827 !important;
 }
 #etfTable th, table th, thead th {
-  background: #000 !important;
-  color: #FF5C33 !important;
-  border-bottom-color: #FF5C33 !important;
+  background: #111827 !important;
+  color: #FFFFFF !important;
+  border-bottom-color: #C2410C !important;
 }
 #etfTable td, table td {
-  color: var(--ink) !important;
-  border-bottom-color: var(--line) !important;
+  color: #111827 !important;
+  border-bottom-color: #D8DEE8 !important;
 }
 #etfTable tbody tr:nth-child(even), table tbody tr:nth-child(even),
 tr:nth-child(even) {
-  background: #161618 !important;
+  background: #EEF1F5 !important;
 }
 #etfTable tbody tr:hover, table tbody tr:hover, tr:hover {
-  background: var(--accent-soft) !important;
+  background: rgba(0,0,0,0.03) !important;
 }
 .symbol, .symbol a, .symbol a:visited, .col-ticker, .col-ticker a,
 .yield, .decay, td:before, .tracker-link {
-  color: #FF5C33 !important;
+  color: #C2410C !important;
 }
 .footer a, footer a, a.tracker-link {
-  color: #FF5C33 !important;
+  color: #C2410C !important;
 }
 .stat, .faq, .rel, .info-card, .card, .panel {
-  background: var(--surface) !important;
-  color: var(--ink) !important;
-  border-color: var(--line) !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #D8DEE8 !important;
 }
-.vote-count, #voteMsg { color: #FF5C33 !important; }
+.vote-count, #voteMsg { color: #C2410C !important; }
 .back-to-top {
   background: transparent !important;
-  color: #FF5C33 !important;
-  border: 1px solid #FF5C33 !important;
+  color: #C2410C !important;
+  border: 1px solid #C2410C !important;
 }
 .back-to-top:hover {
-  background: #FF5C33 !important;
-  color: #000 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
 }
 .watchlist-btn, .header-pro-btn, #resetFilters, #resetBtn {
-  background: #FF5C33 !important;
-  color: #000 !important;
-  border-color: #FF5C33 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
+  border-color: #C2410C !important;
 }
+
 </style>
 </head>
 <body>
@@ -884,8 +895,8 @@ tr:nth-child(even) {
       <a href="https://lsfunds.com/etfs/ovl" target="_blank" rel="noopener noreferrer">
         <img src="Revised DividendStack OVL ad.png">
       </a>
-      <small style="color:#A1A1AA;font-size:0.78em;font-weight:600;">Sponsored By</small>
-      <small style="color:#A1A1AA;font-size:0.78em;font-weight:400;text-align:center;max-width:100%;overflow-wrap:anywhere;">Read carefully before investing. Prospectus: <a href="https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en" target="_blank" rel="noopener noreferrer" style="color:#A1A1AA !important;font-family:inherit !important;font-size:inherit !important;font-weight:400 !important;text-shadow:none !important;background:none !important;letter-spacing:normal;text-decoration:underline !important;">https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en</a></small>
+      <small style="color:#5B6575;font-size:0.78em;font-weight:600;">Sponsored By</small>
+      <small style="color:#5B6575;font-size:0.78em;font-weight:400;text-align:center;max-width:100%;overflow-wrap:anywhere;">Read carefully before investing. Prospectus: <a href="https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en" target="_blank" rel="noopener noreferrer" style="color:#5B6575 !important;font-family:inherit !important;font-size:inherit !important;font-weight:400 !important;text-shadow:none !important;background:none !important;letter-spacing:normal;text-decoration:underline !important;">https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en</a></small>
     </div>
 
     <div class="intro-card">
@@ -1148,8 +1159,8 @@ tr:nth-child(even) {
       <a href="https://lsfunds.com/etfs/ovl" target="_blank" rel="noopener noreferrer">
         <img src="Revised DividendStack OVL ad.png">
       </a>
-      <small style="color:#A1A1AA;font-size:0.78em;font-weight:600;">Sponsored By</small>
-      <small style="color:#A1A1AA;font-size:0.78em;font-weight:400;text-align:center;max-width:100%;overflow-wrap:anywhere;">Read carefully before investing. Prospectus: <a href="https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en" target="_blank" rel="noopener noreferrer" style="color:#A1A1AA !important;font-family:inherit !important;font-size:inherit !important;font-weight:400 !important;text-shadow:none !important;background:none !important;letter-spacing:normal;text-decoration:underline !important;">https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en</a></small>
+      <small style="color:#5B6575;font-size:0.78em;font-weight:600;">Sponsored By</small>
+      <small style="color:#5B6575;font-size:0.78em;font-weight:400;text-align:center;max-width:100%;overflow-wrap:anywhere;">Read carefully before investing. Prospectus: <a href="https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en" target="_blank" rel="noopener noreferrer" style="color:#5B6575 !important;font-family:inherit !important;font-size:inherit !important;font-weight:400 !important;text-shadow:none !important;background:none !important;letter-spacing:normal;text-decoration:underline !important;">https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en</a></small>
     </div>
 
     <div class="disclaimer-box">

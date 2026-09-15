@@ -74,27 +74,27 @@
     <style>
 /* mrvn ETF Network — shared design system (inline per repo for GitHub Pages) */
 :root {
-  /* Canonical tokens */
-  --bg: #09090B;
-  --surface: #121214;
-  --surface-2: #161618;
-  --ink: #F4F4F5;
-  --muted: #A1A1AA;
-  --line: #27272A;
-  --accent: #FF5C33;
-  /* Extended / legacy aliases (same values) */
+  /* Canonical tokens — light theme */
+  --bg: #F3F5F8;
+  --surface: #FFFFFF;
+  --surface-2: #EEF1F5;
+  --ink: #111827;
+  --muted: #5B6575;
+  --line: #D8DEE8;
+  --accent: #C2410C;
+  /* Extended / legacy aliases */
   --ink-muted: var(--muted);
-  --ink-faint: #71717A;
+  --ink-faint: #8B95A5;
   --paper: var(--bg);
   --paper-2: var(--surface);
-  --line-strong: #3F3F46;
-  --header: #000000;
-  --header-ink: #FAFAFA;
-  --accent-soft: rgba(255, 92, 51, 0.14);
-  --accent-hover: #FF8A66;
-  --on-accent: #000000;
-  --danger: #FF4D6A;
-  --pos: #FF5C33;
+  --line-strong: #B8C0CE;
+  --header: #FFFFFF;
+  --header-ink: #111827;
+  --accent-soft: rgba(194, 65, 12, 0.10);
+  --accent-hover: #9A3412;
+  --on-accent: #FFFFFF;
+  --danger: #DC2626;
+  --pos: #C2410C;
   --shell: 94%;
   --shell-max: 1320px;
   --radius: 0;
@@ -102,18 +102,18 @@
   --font-display: "Syne", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
   /* aliases for legacy site CSS */
-  --brand: var(--header);
-  --brand-dark: #000000;
-  --brand-mid: var(--surface);
-  --brand-lite: #1A1A1E;
+  --brand: var(--header-ink);
+  --brand-dark: #111827;
+  --brand-mid: var(--surface-2);
+  --brand-lite: #F8FAFC;
   --gold: var(--accent);
   --gold2: var(--accent-hover);
-  --navy: var(--header);
+  --navy: var(--header-ink);
   --primary: var(--accent);
   --green: var(--accent);
   --purple: var(--accent);
   --purple-bright: var(--accent-hover);
-  --purple-deep: var(--header);
+  --purple-deep: var(--header-ink);
   --bg-primary: var(--bg);
   --bg-secondary: var(--surface);
   --bg-panel: var(--surface);
@@ -149,7 +149,7 @@ body {
 a { color: var(--accent); }
 a:hover { color: var(--accent-hover); }
 
-/* Wordmark header */
+/* Wordmark header — light */
 .nx-header, header.nx-header, body > header:not(.nx-skip) {
   width: 100%;
   background: var(--header);
@@ -175,7 +175,7 @@ a:hover { color: var(--accent-hover); }
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(250, 250, 250, 0.55);
+  color: var(--muted);
   margin-top: 0.45rem;
 }
 .logo-link { text-decoration: none; display: inline-block; }
@@ -191,7 +191,7 @@ a:hover { color: var(--accent-hover); }
   align-items: center;
   gap: 0.35rem;
   padding: 0.45rem 0.85rem;
-  border: 1px solid rgba(255,255,255,0.28);
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius);
   color: var(--header-ink);
   background: transparent;
@@ -430,8 +430,8 @@ input[type="text"], select {
   overflow: hidden;
 }
 #etfTable th, table th, thead th {
-  background: #000 !important;
-  color: var(--accent) !important;
+  background: var(--header-ink) !important;
+  color: #FFFFFF !important;
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 0.68rem;
@@ -554,7 +554,7 @@ input[type="text"], select {
     :root {
       --red-dark:   #7A1C1C;
       --red-mid:    #A63030;
-      --bg:         #09090B;
+      --bg:         #F3F5F8;
       --white:      #ffffff;
       --text:       #333333;
       --text-mid:   #444444;
@@ -708,7 +708,7 @@ input[type="text"], select {
     /* ── SOURCE BADGE ── */
     .source-badge {
       display: inline-flex; align-items: center; gap: 7px;
-      background: #1212148f8; border: 1.5px solid var(--border);
+      background: #FFFFFF8f8; border: 1.5px solid var(--border);
       border-radius: 6px; padding: 8px 14px;
       font-size: 0.82rem; color: var(--text-mid);
       margin-bottom: 12px;
@@ -749,17 +749,17 @@ input[type="text"], select {
       padding: 12px 16px; text-align: left; white-space: nowrap;
     }
     table.div-table tbody tr { border-bottom: 1px solid #eee; transition: background .15s; }
-    table.div-table tbody tr:hover { background: #1212140f0; }
+    table.div-table tbody tr:hover { background: #FFFFFF0f0; }
     table.div-table tbody tr:last-child { border-bottom: none; }
     table.div-table tbody td { padding: 13px 16px; font-size: 0.95rem; color: var(--text-mid); }
     table.div-table tbody td.row-label {
       font-weight: 900; color: var(--red-dark);
-      background: #1212148f8; font-size: 0.8rem;
+      background: #FFFFFF8f8; font-size: 0.8rem;
       letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap;
     }
     table.div-table tbody td.date-cell { font-weight: 700; color: var(--red-dark); }
     table.div-table tbody td.date-tba {
-      font-weight: 700; color: #71717A; font-style: italic;
+      font-weight: 700; color: #8B95A5; font-style: italic;
     }
     .confirmed-badge {
       display: inline-block;
@@ -777,7 +777,7 @@ input[type="text"], select {
     }
     .table-note {
       font-size: 0.77rem; color: var(--text-light);
-      padding: 9px 16px; background: #1212148f8;
+      padding: 9px 16px; background: #FFFFFF8f8;
       border-top: 1px solid var(--border); font-style: italic;
     }
 
@@ -805,7 +805,7 @@ input[type="text"], select {
       padding: 2px 8px; border-radius: 3px;
     }
     .cal-head.tba-head { background: #888; }
-    .cal-head.tba-head .qtag { background: #27272A; color: #A1A1AA; }
+    .cal-head.tba-head .qtag { background: #D8DEE8; color: #5B6575; }
     .cal-body { padding: 13px 15px; }
     .cal-row {
       display: flex; justify-content: space-between; align-items: baseline;
@@ -814,7 +814,7 @@ input[type="text"], select {
     .cal-row:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
     .cal-lbl { font-size: 0.71rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.07em; font-weight: 700; }
     .cal-val { font-weight: 900; color: var(--red-dark); font-size: 0.87rem; }
-    .cal-val.tba { color: #71717A; font-style: italic; font-weight: 700; }
+    .cal-val.tba { color: #8B95A5; font-style: italic; font-weight: 700; }
 
     /* ── VYM PROFILE ── */
     .vym-profile {
@@ -884,7 +884,7 @@ input[type="text"], select {
       display: flex; justify-content: space-between; align-items: center; gap: 12px;
       user-select: none;
     }
-    .faq-q:hover { background: #1212145f5; }
+    .faq-q:hover { background: #FFFFFF5f5; }
     .faq-icon {
       width: 25px; height: 25px; border-radius: 50%;
       background: #ffe0e0; border: 2px solid var(--red-mid);
@@ -909,7 +909,7 @@ input[type="text"], select {
       padding: 16px 20px; margin: 24px 0 12px;
       border-radius: 0 6px 6px 0; box-shadow: 0 2px 8px rgba(0,0,0,.06);
     }
-    .disclaimer-box h3 { color: #71717A; font-size: 0.9rem; margin-bottom: 5px; }
+    .disclaimer-box h3 { color: #8B95A5; font-size: 0.9rem; margin-bottom: 5px; }
     .disclaimer-box p { color: var(--text-light); font-size: 0.83rem; line-height: 1.6; }
 
     /* ── BACK TO TOP ── */
@@ -924,9 +924,9 @@ input[type="text"], select {
 
     /* ── FOOTER ── */
     .footer {
-      font-size: .9em; color: #A1A1AA;
+      font-size: .9em; color: #5B6575;
       margin: 20px auto 10px; padding-top: 10px;
-      border-top: 1px solid #27272A;
+      border-top: 1px solid #D8DEE8;
       max-width: 900px; width: 94%;
       text-align: center;
     }
@@ -947,144 +947,155 @@ input[type="text"], select {
     }
   
 
-/* Force dark network chrome */
+
+/* Force light network chrome */
 :root {
-  --bg: #09090B !important;
-  --surface: #121214 !important;
-  --ink: #F4F4F5 !important;
-  --muted: #A1A1AA !important;
-  --line: #27272A !important;
-  --accent: #FF5C33 !important;
-  --paper: #09090B !important;
-  --paper-2: #121214 !important;
-  --ink-muted: #A1A1AA !important;
-  --text-primary: #F4F4F5 !important;
-  --text-secondary: #A1A1AA !important;
-  --bg-primary: #09090B !important;
-  --bg-secondary: #121214 !important;
-  --gold: #FF5C33 !important;
+  --bg: #F3F5F8 !important;
+  --surface: #FFFFFF !important;
+  --surface-2: #EEF1F5 !important;
+  --ink: #111827 !important;
+  --muted: #5B6575 !important;
+  --line: #D8DEE8 !important;
+  --accent: #C2410C !important;
+  --paper: #F3F5F8 !important;
+  --paper-2: #FFFFFF !important;
+  --ink-muted: #5B6575 !important;
+  --ink-faint: #8B95A5 !important;
+  --header: #FFFFFF !important;
+  --header-ink: #111827 !important;
+  --text-primary: #111827 !important;
+  --text-secondary: #5B6575 !important;
+  --bg-primary: #F3F5F8 !important;
+  --bg-secondary: #FFFFFF !important;
+  --gold: #C2410C !important;
   --gold2: var(--accent-hover) !important;
-  --green: #FF5C33 !important;
-  --primary: #FF5C33 !important;
-  --navy: #000000 !important;
-  --brand: #000000 !important;
-  --light: #121214 !important;
+  --green: #C2410C !important;
+  --primary: #C2410C !important;
+  --navy: #111827 !important;
+  --brand: #111827 !important;
+  --light: #FFFFFF !important;
+  --on-accent: #FFFFFF !important;
 }
 body {
-  background: var(--bg) !important;
-  color: var(--ink) !important;
+  background: #F3F5F8 !important;
+  color: #111827 !important;
 }
 header, .nx-header {
-  background: var(--header) !important;
-  color: var(--header-ink) !important;
-  border-bottom: 2px solid #FF5C33 !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-bottom: 2px solid #C2410C !important;
 }
-.logo, .nx-logo, .logo-text { color: var(--header-ink) !important; }
-.logo span, .nx-logo span { color: #FF5C33 !important; }
-.logo-sub, .nx-tagline { color: rgba(250,250,250,0.55) !important; }
-.header-link, .nx-nav a { color: var(--header-ink) !important; }
+.logo, .nx-logo, .logo-text { color: #111827 !important; }
+.logo span, .nx-logo span { color: #C2410C !important; }
+.logo-sub, .nx-tagline { color: #5B6575 !important; }
+.header-link, .nx-nav a {
+  color: #111827 !important;
+  border-color: #B8C0CE !important;
+  background: transparent !important;
+}
 .header-link:hover, .nx-nav a:hover {
-  background: #FF5C33 !important;
-  color: #000 !important;
-  border-color: #FF5C33 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
+  border-color: #C2410C !important;
 }
 .hero, .nx-hero, main > .hero, section.hero, .main-h1 {
-  background: var(--bg) !important;
-  color: var(--ink) !important;
+  background: #F3F5F8 !important;
+  color: #111827 !important;
 }
 .hero h1, .nx-hero h1, section.hero h1, h1 {
-  color: var(--ink) !important;
+  color: #111827 !important;
 }
 .hero-desc, .nx-support, .intro-text, .disclaimer, .col-name, .chip-label,
 .site-network-label, .table-meta, .footer, footer {
-  color: var(--muted) !important;
+  color: #5B6575 !important;
 }
 .site-network-bar {
-  background: var(--surface) !important;
-  border-bottom: 1px solid var(--line) !important;
+  background: #FFFFFF !important;
+  border-bottom: 1px solid #D8DEE8 !important;
 }
 .site-pill {
   background: transparent !important;
-  color: var(--ink) !important;
-  border: 1px solid var(--line-strong) !important;
+  color: #111827 !important;
+  border: 1px solid #B8C0CE !important;
   border-radius: 0 !important;
 }
 .site-pill:hover {
-  background: var(--accent-soft) !important;
-  color: #FF5C33 !important;
-  border-color: #FF5C33 !important;
+  background: rgba(0,0,0,0.04) !important;
+  color: #C2410C !important;
+  border-color: #C2410C !important;
 }
 .site-pill.current {
-  background: #FF5C33 !important;
-  color: #000 !important;
-  border-color: #FF5C33 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
+  border-color: #C2410C !important;
 }
 .chip {
-  background: var(--surface) !important;
-  color: var(--ink) !important;
-  border-color: #FF5C33 !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #C2410C !important;
 }
 .chip:hover, .chip.active {
-  background: #FF5C33 !important;
-  color: #000 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
 }
 #filters input, #filters select, #searchInput, #searchFilter, #etfSearch,
 input[type="text"], input[type="search"], select, textarea {
-  background: var(--surface) !important;
-  color: var(--ink) !important;
-  border-color: var(--line-strong) !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #B8C0CE !important;
 }
 #filters input::placeholder, input::placeholder {
-  color: var(--ink-faint) !important;
+  color: #8B95A5 !important;
 }
 #etfTable, table.etf-table, .peer-table, #holdings-table, table.ret, table.hublist {
-  background: var(--surface) !important;
-  border-color: var(--line) !important;
-  color: var(--ink) !important;
+  background: #FFFFFF !important;
+  border-color: #D8DEE8 !important;
+  color: #111827 !important;
 }
 #etfTable th, table th, thead th {
-  background: #000 !important;
-  color: #FF5C33 !important;
-  border-bottom-color: #FF5C33 !important;
+  background: #111827 !important;
+  color: #FFFFFF !important;
+  border-bottom-color: #C2410C !important;
 }
 #etfTable td, table td {
-  color: var(--ink) !important;
-  border-bottom-color: var(--line) !important;
+  color: #111827 !important;
+  border-bottom-color: #D8DEE8 !important;
 }
 #etfTable tbody tr:nth-child(even), table tbody tr:nth-child(even),
 tr:nth-child(even) {
-  background: #161618 !important;
+  background: #EEF1F5 !important;
 }
 #etfTable tbody tr:hover, table tbody tr:hover, tr:hover {
-  background: var(--accent-soft) !important;
+  background: rgba(0,0,0,0.03) !important;
 }
 .symbol, .symbol a, .symbol a:visited, .col-ticker, .col-ticker a,
 .yield, .decay, td:before, .tracker-link {
-  color: #FF5C33 !important;
+  color: #C2410C !important;
 }
 .footer a, footer a, a.tracker-link {
-  color: #FF5C33 !important;
+  color: #C2410C !important;
 }
 .stat, .faq, .rel, .info-card, .card, .panel {
-  background: var(--surface) !important;
-  color: var(--ink) !important;
-  border-color: var(--line) !important;
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #D8DEE8 !important;
 }
-.vote-count, #voteMsg { color: #FF5C33 !important; }
+.vote-count, #voteMsg { color: #C2410C !important; }
 .back-to-top {
   background: transparent !important;
-  color: #FF5C33 !important;
-  border: 1px solid #FF5C33 !important;
+  color: #C2410C !important;
+  border: 1px solid #C2410C !important;
 }
 .back-to-top:hover {
-  background: #FF5C33 !important;
-  color: #000 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
 }
 .watchlist-btn, .header-pro-btn, #resetFilters, #resetBtn {
-  background: #FF5C33 !important;
-  color: #000 !important;
-  border-color: #FF5C33 !important;
+  background: #C2410C !important;
+  color: #FFFFFF !important;
+  border-color: #C2410C !important;
 }
+
 </style>
 </head>
 <body>
@@ -1139,8 +1150,8 @@ tr:nth-child(even) {
       <a href="https://lsfunds.com/etfs/ovl" target="_blank" rel="noopener noreferrer">
         <img src="Revised DividendStack OVL ad.png">
       </a>
-      <small style="color:#A1A1AA;font-size:0.78em;font-weight:600;">Sponsored By</small>
-      <small style="color:#A1A1AA;font-size:0.78em;font-weight:400;text-align:center;max-width:100%;overflow-wrap:anywhere;">Read carefully before investing. Prospectus: <a href="https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en" target="_blank" rel="noopener noreferrer" style="color:#A1A1AA !important;font-family:inherit !important;font-size:inherit !important;font-weight:400 !important;text-shadow:none !important;background:none !important;letter-spacing:normal;text-decoration:underline !important;">https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en</a></small>
+      <small style="color:#5B6575;font-size:0.78em;font-weight:600;">Sponsored By</small>
+      <small style="color:#5B6575;font-size:0.78em;font-weight:400;text-align:center;max-width:100%;overflow-wrap:anywhere;">Read carefully before investing. Prospectus: <a href="https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en" target="_blank" rel="noopener noreferrer" style="color:#5B6575 !important;font-family:inherit !important;font-size:inherit !important;font-weight:400 !important;text-shadow:none !important;background:none !important;letter-spacing:normal;text-decoration:underline !important;">https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en</a></small>
     </div>
 
     <!-- INTRO -->
@@ -1157,7 +1168,7 @@ tr:nth-child(even) {
 
     <!-- INTERJECTION 1: Related dividend dates — same search intent -->
     <div style="background:var(--white);border:2px solid #c8e6d8;border-radius:8px;padding:14px 18px;margin:0 0 6px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
-      <span style="font-size:0.78rem;font-weight:900;color:#A1A1AA;text-transform:uppercase;letter-spacing:0.07em;white-space:nowrap;">📅 Also tracking:</span>
+      <span style="font-size:0.78rem;font-weight:900;color:#5B6575;text-transform:uppercase;letter-spacing:0.07em;white-space:nowrap;">📅 Also tracking:</span>
       <a href="https://marvinsmx.github.io/yield-atlas/schd-etf-2026-dividend-dates.html" style="display:inline-flex;align-items:center;gap:6px;background:#000000;color:#fff;font-weight:900;font-size:0.82rem;padding:7px 13px;border-radius:5px;text-decoration:none;">SCHD 2026 Dates →</a>
       <a href="https://marvinsmx.github.io/yield-atlas/qqqi-etf-dividend-dates-2026.html" style="display:inline-flex;align-items:center;gap:6px;background:#000000;color:#fff;font-weight:900;font-size:0.82rem;padding:7px 13px;border-radius:5px;text-decoration:none;">QQQI 2026 Dates →</a>
       <a href="https://marvinsmx.github.io/yield-atlas/dgro-etf-ex-dividend-dates-2026" style="display:inline-flex;align-items:center;gap:6px;background:#000000;color:#fff;font-weight:900;font-size:0.82rem;padding:7px 13px;border-radius:5px;text-decoration:none;">DGRO 2026 Dates →</a>
@@ -1334,9 +1345,9 @@ tr:nth-child(even) {
     <!-- INTERJECTION 3: SCHD Calculator CTA — reader just learned about VYM income, now wants to calculate -->
     <div style="background:var(--white);border:3px solid #c8e6d8;border-radius:10px;padding:20px 22px;margin:8px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;box-shadow:0 2px 10px rgba(0,0,0,.07);">
       <div>
-        <div style="font-size:0.7rem;color:#FF5C33;font-weight:900;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">🧮 Free Tool</div>
+        <div style="font-size:0.7rem;color:#C2410C;font-weight:900;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">🧮 Free Tool</div>
         <div style="color:#000000;font-weight:900;font-size:1rem;margin-bottom:3px;">How much dividend income could you be earning?</div>
-        <div style="color:#A1A1AA;font-size:0.85rem;">Our SCHD Dividend Calculator lets you enter any investment amount and project 30 years of quarterly payouts — with DRIP reinvestment built in.</div>
+        <div style="color:#5B6575;font-size:0.85rem;">Our SCHD Dividend Calculator lets you enter any investment amount and project 30 years of quarterly payouts — with DRIP reinvestment built in.</div>
       </div>
       <a href="https://marvinsmx.github.io/yield-atlas/schd-dividend-calculator" style="background:#000000;color:#fff;font-weight:900;font-size:0.88rem;padding:11px 20px;border-radius:7px;text-decoration:none;white-space:nowrap;box-shadow:0 3px 8px rgba(0,0,0,.2);">Try the Calculator →</a>
     </div>
@@ -1519,8 +1530,8 @@ tr:nth-child(even) {
       <a href="https://lsfunds.com/etfs/ovl" target="_blank" rel="noopener noreferrer">
         <img src="Revised DividendStack OVL ad.png">
       </a>
-      <small style="color:#A1A1AA;font-size:0.78em;font-weight:600;">Sponsored By</small>
-      <small style="color:#A1A1AA;font-size:0.78em;font-weight:400;text-align:center;max-width:100%;overflow-wrap:anywhere;">Read carefully before investing. Prospectus: <a href="https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en" target="_blank" rel="noopener noreferrer" style="color:#A1A1AA !important;font-family:inherit !important;font-size:inherit !important;font-weight:400 !important;text-shadow:none !important;background:none !important;letter-spacing:normal;text-decoration:underline !important;">https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en</a></small>
+      <small style="color:#5B6575;font-size:0.78em;font-weight:600;">Sponsored By</small>
+      <small style="color:#5B6575;font-size:0.78em;font-weight:400;text-align:center;max-width:100%;overflow-wrap:anywhere;">Read carefully before investing. Prospectus: <a href="https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en" target="_blank" rel="noopener noreferrer" style="color:#5B6575 !important;font-family:inherit !important;font-size:inherit !important;font-weight:400 !important;text-shadow:none !important;background:none !important;letter-spacing:normal;text-decoration:underline !important;">https://lsfunds.com/hubfs/Regulatory/Prospectus.pdf?hsLang=en</a></small>
     </div>
 
     <!-- DISCLAIMER -->
@@ -1533,7 +1544,7 @@ tr:nth-child(even) {
 
     <!-- FOOTER -->
     <footer class="footer">
-      <p style="margin-top:12px;color:#71717A;font-size:0.8rem;">
+      <p style="margin-top:12px;color:#8B95A5;font-size:0.8rem;">
         Dates sourced from Vanguard's official 2026 ETF Distributions Schedule (DIVDAT 2026) and confirmed distribution data. Not affiliated with The Vanguard Group, Inc.
       </p>
     </footer>
