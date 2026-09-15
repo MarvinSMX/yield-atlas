@@ -722,7 +722,7 @@
     const CSV_URL = 'data/seed.csv';
     const TARGET_SYMBOL = 'FDVV';
 
-    fetch(CSV_URL + '&t=' + Date.now())
+    fetch(CSV_URL + '?t=' + Date.now())
         .then(r => r.ok ? r.text() : Promise.reject())
         .then(txt => renderLiveYield(txt))
         .catch(() => showYieldFallback());

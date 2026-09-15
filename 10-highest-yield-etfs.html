@@ -1120,7 +1120,7 @@
         });
 
         function loadData() {
-            fetch(CSV_URL + '&t=' + Date.now())
+            fetch(CSV_URL + '?t=' + Date.now())
                 .then(r => r.text())
                 .then(txt => parseAndDisplay(txt))
                 .catch(err => {

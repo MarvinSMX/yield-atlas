@@ -506,7 +506,7 @@
     }
 
     function loadLive(){
-        fetch(CSV_URL + '&t=' + Date.now())
+        fetch(CSV_URL + '?t=' + Date.now())
             .then(r => r.text())
             .then(txt => {
                 const lines = txt.split('\n');

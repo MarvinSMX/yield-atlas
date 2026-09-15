@@ -386,8 +386,8 @@ async function init(){
     try {
         const [hRes, cRes, fRes] = await Promise.all([
             fetch(HISTORY_URL + '?t=' + Date.now()),
-            fetch(CSV_URL + '&t=' + Date.now()),
-            fetch(FREE_CSV_URL + '&t=' + Date.now())
+            fetch(CSV_URL + '?t=' + Date.now()),
+            fetch(FREE_CSV_URL + '?t=' + Date.now())
         ]);
         history = await hRes.json();
         csvText = cRes.ok ? await cRes.text() : '';

@@ -2494,7 +2494,7 @@
 
         var CSV_URL = 'data/seed.csv';
 
-        fetch(CSV_URL + '&t=' + Date.now())
+        fetch(CSV_URL + '?t=' + Date.now())
             .then(function(r){ return r.ok ? r.text() : Promise.reject(); })
             .then(function(txt){
                 var seen = {}, syms = [];
