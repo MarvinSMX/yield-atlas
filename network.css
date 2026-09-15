@@ -188,6 +188,43 @@ body > h1, .content > h1, .main-h1, .main-h1 h1, h1 {
 }
 .intro-text strong, .hero-desc strong, .top-disclaimer strong { color: #222222 !important; }
 
+/* Hero highlights — beat muted intro-text * inheritance */
+.intro-text .free-highlight,
+.free-highlight {
+  color: #DC2626 !important;
+  font-weight: 900 !important;
+}
+.intro-text .free-highlight:not(.inline),
+.free-highlight:not(.inline) {
+  font-size: 1.2em !important;
+  display: block !important;
+  margin-top: 6px !important;
+}
+.free-highlight.inline {
+  display: inline !important;
+  font-size: inherit !important;
+  margin: 0 !important;
+}
+.intro-text .weekly,
+span.weekly,
+.weekly {
+  color: #1A3C34 !important;
+  font-weight: 900 !important;
+  font-size: 0.9em !important;
+  margin-top: 8px !important;
+  display: block !important;
+}
+.intro-text .weekly a,
+.weekly a {
+  color: #1DA1F2 !important;
+  text-decoration: underline !important;
+  font-weight: 900 !important;
+}
+.intro-text .weekly strong,
+.weekly strong {
+  color: inherit !important;
+}
+
 /* Share / Post — readable on light canvas */
 .share-buttons { display: flex !important; gap: 12px !important; justify-content: center !important; flex-wrap: wrap !important; margin: 18px auto 8px !important; }
 .share-btn, a.share-btn {
