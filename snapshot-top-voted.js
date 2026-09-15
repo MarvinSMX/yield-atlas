@@ -26,7 +26,7 @@ const fs = require('fs');
 const path = require('path');
 
 const CSV_URL  = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRYVQtSlWkwIDCeeB-YaQEpelovyW9ofaItXrzXZ_ntodK4QasRTKhP-swVWISmXIDZTIvQlbvNZm_o/pub?output=csv';
-const VOTE_API = 'https://script.google.com/macros/s/REPLACE_ME_YIELD_ATLAS_VOTES/exec';
+const VOTE_API = 'https://script.google.com/macros/s/AKfycbwiuyy8aUNB3tNKouJ18zxE8r8nuiCTk3lG9PCYeqEQndImu_8915rNHudiayXtFNbi/exec';
 const PAGE     = process.env.PAGE_PATH || 'top-voted-etfs.html';
 const DATA_DIR = 'data';
 const TOP_N    = 10;
