@@ -19,7 +19,7 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const SITE = 'https://yieldatlas.com';
+const SITE = 'https://marvinsmx.github.io/yield-atlas/';
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, 'sitemap.xml');
 

@@ -10,7 +10,7 @@
 <meta property="og:title" content="Online Dating but for Dividend ETFs • YieldAtlas.com">
 <meta property="og:description" content="Swipe for Dividend ETFs. Swipe Yes or No on the best high-yield income ETFs.">
 <meta property="og:image" content="efts-dividend.png">
-<meta property="og:url" content="https://yieldatlas.com/dating">
+<meta property="og:url" content="https://marvinsmx.github.io/yield-atlas/dating">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="YieldAtlas.com">
 <meta name="twitter:card" content="summary_large_image">
@@ -98,7 +98,7 @@ body { font-family:var(--font); background:var(--slate-50); color:var(--slate-80
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="header-logo">YieldAtlas.com <span></span></a>
+    <a href="/yield-atlas/" class="header-logo">YieldAtlas.com <span></span></a>
     <button onclick="showSaved()" style="background:rgba(255,255,255,0.2);color:white;border:none;padding:8px 18px;border-radius:999px;font-weight:600">❤️ Saved (<span id="savedCount">0</span>)</button>
   </div>
 </header>
@@ -109,7 +109,7 @@ body { font-family:var(--font); background:var(--slate-50); color:var(--slate-80
 
 <!-- New Button -->
 <div style="text-align:center; margin:8px 0 12px;">
-  <button onclick="window.open('https://YieldAtlasPRO.com','_blank')" style="padding:10px 28px; background:#10B981; color:white; border:none; border-radius:999px; font-weight:700; font-size:15.5px; cursor:pointer; box-shadow:0 4px 12px rgba(16,185,129,0.3);">
+  <button onclick="window.open('https://marvinsmx.github.io/yield-atlas-pro/','_blank')" style="padding:10px 28px; background:#10B981; color:white; border:none; border-radius:999px; font-weight:700; font-size:15.5px; cursor:pointer; box-shadow:0 4px 12px rgba(16,185,129,0.3);">
     Try YieldAtlasPRO.com →
   </button>
 </div>
@@ -170,7 +170,7 @@ body { font-family:var(--font); background:var(--slate-50); color:var(--slate-80
 
 <script>
 // ==================== DATA ====================
-const CSV_URL = "data/seed.csv";
+const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxCiod-Cwry7E6k9Un9dgrM_ANymC36_IO_wLyNj-YDo2KI7mp_1ZzyNBnBGZOxT48QPM8TCwtsmA4/pub?gid=0&single=true&output=csv";
 
 let allETFs = [];
 let deck = [];
@@ -185,7 +185,7 @@ function cleanPct(val) {
 
 async function loadETFs() {
   try {
-    const res = await fetch(CSV_URL + '?t=' + Date.now());
+    const res = await fetch(CSV_URL + '&t=' + Date.now());
     const text = await res.text();
     const lines = text.trim().split('\n');
     allETFs = [];
@@ -308,7 +308,7 @@ function closeOfferModal() {
 }
 
 function goToMainSite() {
-  window.open('https://YieldAtlas.com', '_blank');
+  window.open('https://marvinsmx.github.io/yield-atlas/', '_blank');
   closeOfferModal();
 }
 
