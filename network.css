@@ -173,3 +173,37 @@ header, .nx-header, body > header:not(.nx-skip) {
 .back-to-top { background: #1A3C34 !important; color: #ffffff !important; border-radius: 4px !important; padding: 8px 20px !important; border: none !important; font-weight: 700 !important; }
 .vote-count, #voteMsg { color: #C2410C !important; font-weight: 700 !important; }
 .stars, .orb, body::before { display: none !important; }
+
+/* Light-canvas text safety (never white on cream) */
+body > h1, .content > h1, .main-h1, .main-h1 h1, h1 {
+  color: #1A3C34 !important;
+}
+.hero h1, .nx-hero h1, .hero h1 span, .nx-hero h1 span {
+  color: #1A3C34 !important;
+}
+.hero h1 span, .nx-hero h1 span, .main-h1 h1 span { color: #C2410C !important; }
+.hero-desc, .nx-support, .intro-text, .top-disclaimer, .subhead,
+.hero-desc *, .intro-text *, .nx-support * {
+  color: #333333 !important;
+}
+.intro-text strong, .hero-desc strong, .top-disclaimer strong { color: #222222 !important; }
+
+/* Share / Post — readable on light canvas */
+.share-buttons { display: flex !important; gap: 12px !important; justify-content: center !important; flex-wrap: wrap !important; margin: 18px auto 8px !important; }
+.share-btn, a.share-btn {
+  display: inline-flex !important; align-items: center !important; gap: 6px !important;
+  padding: 8px 14px !important; border-radius: 6px !important;
+  font-weight: 800 !important; font-size: 0.85em !important; text-decoration: none !important;
+  color: #222222 !important; background: #ffffff !important;
+  border: 1.5px solid #1A3C34 !important; box-shadow: none !important;
+}
+.share-btn:hover, a.share-btn:hover {
+  background: #f4f2ef !important; color: #111111 !important; border-color: #C2410C !important;
+}
+.share-btn.fb, a.share-btn.fb, .fb.share-btn {
+  color: #1877F2 !important; border-color: #1877F2 !important; background: #ffffff !important;
+}
+.share-btn.x, a.share-btn.x, .x.share-btn, .share-btn.xbtn, a.share-btn.xbtn {
+  color: #111111 !important; border-color: #111111 !important; background: #ffffff !important;
+}
+.share-btn svg { width: 15px !important; height: 15px !important; fill: currentColor !important; }
