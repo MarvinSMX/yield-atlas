@@ -1,24 +1,24 @@
 {
-  "updated": "2026-09-27T05:01:54.909Z",
+  "updated": "2026-09-27T11:51:35.713Z",
   "total_tracked": 155,
   "top": [
     {
-      "symbol": "SPYI",
-      "name": "NEOS S&P 500 High Income ETF",
-      "votes": 14,
-      "yield": "12.04%"
-    },
-    {
       "symbol": "TSPY",
       "name": "TappAlpha S&P 500 Growth & Daily Income ETF",
-      "votes": 14,
+      "votes": 18,
       "yield": "14.0%"
     },
     {
       "symbol": "QDVO",
       "name": "Amplify CWP Growth & Income ETF",
-      "votes": 13,
+      "votes": 17,
       "yield": "10.0%"
+    },
+    {
+      "symbol": "SPYI",
+      "name": "NEOS S&P 500 High Income ETF",
+      "votes": 16,
+      "yield": "12.04%"
     },
     {
       "symbol": "CHPY",
