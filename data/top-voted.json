@@ -1,30 +1,42 @@
 {
-  "updated": "2026-09-26T20:58:03.271Z",
+  "updated": "2026-09-27T05:01:54.909Z",
   "total_tracked": 155,
   "top": [
     {
       "symbol": "SPYI",
       "name": "NEOS S&P 500 High Income ETF",
-      "votes": 11,
+      "votes": 14,
       "yield": "12.04%"
-    },
-    {
-      "symbol": "QDVO",
-      "name": "Amplify CWP Growth & Income ETF",
-      "votes": 10,
-      "yield": "10.0%"
     },
     {
       "symbol": "TSPY",
       "name": "TappAlpha S&P 500 Growth & Daily Income ETF",
-      "votes": 10,
+      "votes": 14,
       "yield": "14.0%"
+    },
+    {
+      "symbol": "QDVO",
+      "name": "Amplify CWP Growth & Income ETF",
+      "votes": 13,
+      "yield": "10.0%"
     },
     {
       "symbol": "CHPY",
       "name": "YieldMax Semiconductor Portfolio Option Income ETF",
-      "votes": 6,
+      "votes": 9,
       "yield": "41%"
+    },
+    {
+      "symbol": "SEPI",
+      "name": "Shelton Equity Premium Income ETF",
+      "votes": 9,
+      "yield": "8.5%"
+    },
+    {
+      "symbol": "QQQI",
+      "name": "NEOS Nasdaq 100 High Income ETF",
+      "votes": 4,
+      "yield": "14.0%"
     },
     {
       "symbol": "OVL",
@@ -33,34 +45,22 @@
       "yield": "10.5%"
     },
     {
-      "symbol": "QQQI",
-      "name": "NEOS Nasdaq 100 High Income ETF",
-      "votes": 3,
-      "yield": "14.0%"
-    },
-    {
-      "symbol": "SEPI",
-      "name": "Shelton Equity Premium Income ETF",
-      "votes": 3,
-      "yield": "8.5%"
-    },
-    {
       "symbol": "FEPI",
       "name": "REX FANG & Innovation Equity Premium Income ETF",
       "votes": 2,
       "yield": "25.2%"
     },
     {
+      "symbol": "GOOW",
+      "name": "Roundhill GOOGL WeeklyPay ETF",
+      "votes": 2,
+      "yield": "42.0%"
+    },
+    {
       "symbol": "JEPQ",
       "name": "JPMorgan NASDAQ Equity Premium Income ETF",
       "votes": 2,
       "yield": "12.0%"
-    },
-    {
-      "symbol": "AIPI",
-      "name": "REX AI Equity Premium Income ETF",
-      "votes": 1,
-      "yield": "34.8%"
     }
   ]
 }
