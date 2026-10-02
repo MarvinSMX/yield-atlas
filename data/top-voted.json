@@ -1,17 +1,17 @@
 {
-  "updated": "2026-10-01T22:35:06.481Z",
+  "updated": "2026-10-02T05:18:14.283Z",
   "total_tracked": 158,
   "top": [
     {
       "symbol": "CHPY",
       "name": "YieldMax Semiconductor Portfolio Option Income ETF",
-      "votes": 55,
+      "votes": 56,
       "yield": "41%"
     },
     {
       "symbol": "TMGN",
       "name": "TappAlpha Cboe Magnificent 10 Growth & Daily Income ETF",
-      "votes": 51,
+      "votes": 52,
       "yield": "21%"
     },
     {
@@ -23,13 +23,13 @@
     {
       "symbol": "TSPY",
       "name": "TappAlpha S&P 500 Growth & Daily Income ETF",
-      "votes": 33,
+      "votes": 34,
       "yield": "14.0%"
     },
     {
       "symbol": "SPYI",
       "name": "NEOS S&P 500 High Income ETF",
-      "votes": 31,
+      "votes": 32,
       "yield": "12.04%"
     },
     {
@@ -41,26 +41,26 @@
     {
       "symbol": "QQQI",
       "name": "NEOS Nasdaq 100 High Income ETF",
-      "votes": 8,
+      "votes": 9,
       "yield": "14.0%"
     },
     {
       "symbol": "GOOW",
       "name": "Roundhill GOOGL WeeklyPay ETF",
-      "votes": 7,
+      "votes": 8,
       "yield": "42.0%"
+    },
+    {
+      "symbol": "JEPQ",
+      "name": "JPMorgan NASDAQ Equity Premium Income ETF",
+      "votes": 7,
+      "yield": "12.0%"
     },
     {
       "symbol": "OVL",
       "name": "Overlay Shares Large Cap Equity ETF",
       "votes": 7,
       "yield": "10.5%"
-    },
-    {
-      "symbol": "MSTY",
-      "name": "YieldMax MSTR Option Income Strategy ETF",
-      "votes": 6,
-      "yield": "100%"
     }
   ]
 }
