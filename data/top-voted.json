@@ -1,36 +1,54 @@
 {
-  "updated": "2026-10-03T20:56:09.156Z",
+  "updated": "2026-10-04T05:33:27.933Z",
   "total_tracked": 158,
   "top": [
     {
       "symbol": "CHPY",
       "name": "YieldMax Semiconductor Portfolio Option Income ETF",
-      "votes": 10,
+      "votes": 14,
       "yield": "41%"
     },
     {
       "symbol": "TDAQ",
       "name": "TappAlpha Innovation 100 Growth & Daily Income ETF",
-      "votes": 4,
+      "votes": 5,
       "yield": "17.4%"
     },
     {
       "symbol": "TMGN",
       "name": "TappAlpha Cboe Magnificent 10 Growth & Daily Income ETF",
-      "votes": 4,
+      "votes": 5,
       "yield": "21%"
+    },
+    {
+      "symbol": "FEPI",
+      "name": "REX FANG & Innovation Equity Premium Income ETF",
+      "votes": 4,
+      "yield": "25.2%"
+    },
+    {
+      "symbol": "MSTY",
+      "name": "YieldMax MSTR Option Income Strategy ETF",
+      "votes": 4,
+      "yield": "100%"
+    },
+    {
+      "symbol": "OVL",
+      "name": "Overlay Shares Large Cap Equity ETF",
+      "votes": 4,
+      "yield": "10.5%"
+    },
+    {
+      "symbol": "SPYI",
+      "name": "NEOS S&P 500 High Income ETF",
+      "votes": 4,
+      "yield": "12.04%"
     },
     {
       "symbol": "BLOX",
       "name": "Nicholas Crypto Income ETF",
       "votes": 3,
       "yield": "36.0%"
-    },
-    {
-      "symbol": "FEPI",
-      "name": "REX FANG & Innovation Equity Premium Income ETF",
-      "votes": 3,
-      "yield": "25.2%"
     },
     {
       "symbol": "GIAX",
@@ -43,24 +61,6 @@
       "name": "IncomeSTKd 1X Bitcoin & 1X Gold Premium ETF",
       "votes": 3,
       "yield": "17%"
-    },
-    {
-      "symbol": "MSTY",
-      "name": "YieldMax MSTR Option Income Strategy ETF",
-      "votes": 3,
-      "yield": "100%"
-    },
-    {
-      "symbol": "SMYY",
-      "name": "GraniteShares YieldBOOST SMCI ETF",
-      "votes": 3,
-      "yield": "71%"
-    },
-    {
-      "symbol": "SPYI",
-      "name": "NEOS S&P 500 High Income ETF",
-      "votes": 3,
-      "yield": "12.04%"
     }
   ]
 }
