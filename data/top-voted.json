@@ -1,30 +1,30 @@
 {
-  "updated": "2026-10-06T18:15:27.906Z",
+  "updated": "2026-10-07T05:36:26.945Z",
   "total_tracked": 158,
   "top": [
     {
-      "symbol": "CHPY",
-      "name": "YieldMax Semiconductor Portfolio Option Income ETF",
-      "votes": 35,
-      "yield": "43%"
-    },
-    {
       "symbol": "TMGN",
       "name": "TappAlpha Cboe Magnificent 10 Growth & Daily Income ETF",
-      "votes": 35,
+      "votes": 46,
       "yield": "21%"
     },
     {
-      "symbol": "TYLG",
-      "name": "Information Technology Covered Call & Growth ETF",
-      "votes": 27,
-      "yield": "7.3%"
+      "symbol": "CHPY",
+      "name": "YieldMax Semiconductor Portfolio Option Income ETF",
+      "votes": 42,
+      "yield": "43%"
     },
     {
       "symbol": "SEPI",
       "name": "Shelton Equity Premium Income ETF",
-      "votes": 24,
+      "votes": 37,
       "yield": "0.7%"
+    },
+    {
+      "symbol": "TYLG",
+      "name": "Information Technology Covered Call & Growth ETF",
+      "votes": 37,
+      "yield": "7.3%"
     },
     {
       "symbol": "QDVO",
@@ -47,7 +47,7 @@
     {
       "symbol": "BLOX",
       "name": "Nicholas Crypto Income ETF",
-      "votes": 12,
+      "votes": 13,
       "yield": "36.0%"
     },
     {
