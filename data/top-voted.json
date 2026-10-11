@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T05:27:34.295Z",
+  "updated": "2026-10-11T12:35:24.088Z",
   "total_tracked": 158,
   "top": [
     {
@@ -57,10 +57,10 @@
       "yield": "30%"
     },
     {
-      "symbol": "QQQI",
-      "name": "NEOS Nasdaq 100 High Income ETF",
+      "symbol": "JEPQ",
+      "name": "JPMorgan NASDAQ Equity Premium Income ETF",
       "votes": 2,
-      "yield": "14.4%"
+      "yield": "11.2%"
     }
   ]
 }
