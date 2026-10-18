@@ -1,7 +1,13 @@
 {
-  "updated": "2026-10-18T10:49:52.488Z",
+  "updated": "2026-10-18T15:44:21.752Z",
   "total_tracked": 159,
   "top": [
+    {
+      "symbol": "TSPY",
+      "name": "TappAlpha S&P 500 Growth & Daily Income ETF",
+      "votes": 10,
+      "yield": "13.9%"
+    },
     {
       "symbol": "CHPY",
       "name": "YieldMax Semiconductor Portfolio Option Income ETF",
@@ -11,7 +17,7 @@
     {
       "symbol": "OVL",
       "name": "Overlay Shares Large Cap Equity ETF",
-      "votes": 3,
+      "votes": 4,
       "yield": "10.5%"
     },
     {
@@ -55,12 +61,6 @@
       "name": "YieldMax AMD Option Income Strategy ETF",
       "votes": 1,
       "yield": "71%"
-    },
-    {
-      "symbol": "DRKY",
-      "name": "VistaShares Target 15™ DRUKMacro Distribution ETF",
-      "votes": 1,
-      "yield": "15.0%"
     }
   ]
 }
