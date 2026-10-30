@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T05:28:07.476Z",
+  "updated": "2026-10-30T12:38:20.132Z",
   "total_tracked": 163,
   "top": [
     {
@@ -9,28 +9,28 @@
       "yield": "21%"
     },
     {
+      "symbol": "OVQ",
+      "name": "Overlay Shares Nasdaq 100 Income ETF",
+      "votes": 41,
+      "yield": "12%"
+    },
+    {
       "symbol": "FIZY",
       "name": "Fitz-Gerald Must Have Portfolio and Options Overlay ETF",
       "votes": 40,
       "yield": "14%"
     },
     {
-      "symbol": "OVQ",
-      "name": "Overlay Shares Nasdaq 100 Income ETF",
-      "votes": 40,
-      "yield": "12%"
+      "symbol": "CHPY",
+      "name": "YieldMax Semiconductor Portfolio Option Income ETF",
+      "votes": 39,
+      "yield": "40%"
     },
     {
       "symbol": "DIVB",
       "name": "iShares Core Dividend ETF",
       "votes": 39,
       "yield": "2.3%"
-    },
-    {
-      "symbol": "CHPY",
-      "name": "YieldMax Semiconductor Portfolio Option Income ETF",
-      "votes": 38,
-      "yield": "40%"
     },
     {
       "symbol": "HAKY",
