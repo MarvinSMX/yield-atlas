@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-29T22:39:55.466Z",
+  "updated": "2026-10-30T05:28:07.476Z",
   "total_tracked": 163,
   "top": [
     {
       "symbol": "TMGN",
       "name": "TappAlpha Cboe Magnificent 10 Growth & Daily Income ETF",
-      "votes": 41,
+      "votes": 43,
       "yield": "21%"
     },
     {
@@ -21,6 +21,12 @@
       "yield": "12%"
     },
     {
+      "symbol": "DIVB",
+      "name": "iShares Core Dividend ETF",
+      "votes": 39,
+      "yield": "2.3%"
+    },
+    {
       "symbol": "CHPY",
       "name": "YieldMax Semiconductor Portfolio Option Income ETF",
       "votes": 38,
@@ -31,12 +37,6 @@
       "name": "Amplify HACK Cybersecurity Covered Call ETF",
       "votes": 37,
       "yield": "15%"
-    },
-    {
-      "symbol": "DIVB",
-      "name": "iShares Core Dividend ETF",
-      "votes": 36,
-      "yield": "2.3%"
     },
     {
       "symbol": "VFLO",
