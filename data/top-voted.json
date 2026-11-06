@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T06:13:40.462Z",
+  "updated": "2026-11-06T19:14:06.128Z",
   "total_tracked": 165,
   "top": [
     {
@@ -9,16 +9,16 @@
       "yield": "2.3%"
     },
     {
+      "symbol": "OVQ",
+      "name": "Overlay Shares Nasdaq 100 Income ETF",
+      "votes": 18,
+      "yield": "12%"
+    },
+    {
       "symbol": "TMGN",
       "name": "TappAlpha Cboe Magnificent 10 Growth & Daily Income ETF",
       "votes": 18,
       "yield": "21%"
-    },
-    {
-      "symbol": "OVQ",
-      "name": "Overlay Shares Nasdaq 100 Income ETF",
-      "votes": 17,
-      "yield": "12%"
     },
     {
       "symbol": "FIZY",
@@ -29,7 +29,7 @@
     {
       "symbol": "CHPY",
       "name": "YieldMax Semiconductor Portfolio Option Income ETF",
-      "votes": 11,
+      "votes": 12,
       "yield": "40%"
     },
     {
@@ -51,16 +51,16 @@
       "yield": "22.1%"
     },
     {
+      "symbol": "AMDW",
+      "name": "AMDW AMD WeeklyPay ETF",
+      "votes": 9,
+      "yield": "69.2%"
+    },
+    {
       "symbol": "HDV",
       "name": "iShares Core High Dividend ETF",
       "votes": 9,
       "yield": "3.1%"
-    },
-    {
-      "symbol": "QQQI",
-      "name": "NEOS Nasdaq 100 High Income ETF",
-      "votes": 9,
-      "yield": "14.1%"
     }
   ]
 }
