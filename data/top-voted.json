@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T05:55:05.949Z",
+  "updated": "2026-11-09T15:55:44.838Z",
   "total_tracked": 165,
   "top": [
     {
@@ -48,7 +48,7 @@
       "symbol": "HOYY",
       "name": "GraniteShares YieldBOOST HOOD ETF",
       "votes": 3,
-      "yield": "75%"
+      "yield": "76%"
     },
     {
       "symbol": "TDVI",
@@ -60,7 +60,7 @@
       "symbol": "TYLG",
       "name": "Information Technology Covered Call & Growth ETF",
       "votes": 3,
-      "yield": "12.1%"
+      "yield": "12.9%"
     }
   ]
 }
