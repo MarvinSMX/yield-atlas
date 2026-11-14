@@ -1,24 +1,48 @@
 {
-  "updated": "2026-11-14T13:23:52.990Z",
+  "updated": "2026-11-14T22:14:21.216Z",
   "total_tracked": 173,
   "top": [
     {
       "symbol": "SPYI",
       "name": "NEOS S&P 500 High Income ETF",
-      "votes": 10,
+      "votes": 11,
       "yield": "11.40%"
     },
     {
       "symbol": "DIVB",
       "name": "iShares Core Dividend ETF",
-      "votes": 4,
+      "votes": 8,
       "yield": "2.1%"
     },
     {
       "symbol": "TMGN",
       "name": "TappAlpha Cboe Magnificent 10 Growth & Daily Income ETF",
-      "votes": 3,
+      "votes": 7,
       "yield": "21%"
+    },
+    {
+      "symbol": "CSHI",
+      "name": "NEOS Enhanced Income 1-3 Month T-Bill ETF",
+      "votes": 4,
+      "yield": "5.0%"
+    },
+    {
+      "symbol": "FIZY",
+      "name": "Fitz-Gerald Must Have Portfolio and Options Overlay ETF",
+      "votes": 4,
+      "yield": "14%"
+    },
+    {
+      "symbol": "CHPY",
+      "name": "YieldMax Semiconductor Portfolio Option Income ETF",
+      "votes": 3,
+      "yield": "41%"
+    },
+    {
+      "symbol": "SEPI",
+      "name": "Shelton Equity Premium Income ETF",
+      "votes": 3,
+      "yield": "8.3%"
     },
     {
       "symbol": "ACKY",
@@ -27,40 +51,16 @@
       "yield": "15.0%"
     },
     {
-      "symbol": "FIZY",
-      "name": "Fitz-Gerald Must Have Portfolio and Options Overlay ETF",
-      "votes": 2,
-      "yield": "14%"
-    },
-    {
       "symbol": "IWMI",
       "name": "NEOS Russell 2000 High Income ETF",
       "votes": 2,
       "yield": "14.2%"
     },
     {
-      "symbol": "BLOX",
-      "name": "Nicholas Crypto Income ETF",
-      "votes": 1,
-      "yield": "36.0%"
-    },
-    {
-      "symbol": "CSHI",
-      "name": "NEOS Enhanced Income 1-3 Month T-Bill ETF",
-      "votes": 1,
-      "yield": "5.0%"
-    },
-    {
-      "symbol": "DRKY",
-      "name": "VistaShares Target 15™ DRUKMacro Distribution ETF",
-      "votes": 1,
-      "yield": "15.0%"
-    },
-    {
-      "symbol": "MAXI",
-      "name": "Simplify Bitcoin Strategy PLUS Income ETF",
-      "votes": 1,
-      "yield": "4.0%"
+      "symbol": "QQQI",
+      "name": "NEOS Nasdaq 100 High Income ETF",
+      "votes": 2,
+      "yield": "14.1%"
     }
   ]
 }
