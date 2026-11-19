@@ -1,17 +1,23 @@
 {
-  "updated": "2026-11-19T07:01:39.876Z",
+  "updated": "2026-11-19T20:24:20.465Z",
   "total_tracked": 173,
   "top": [
     {
       "symbol": "TMGN",
       "name": "TappAlpha Cboe Magnificent 10 Growth & Daily Income ETF",
-      "votes": 18,
+      "votes": 20,
       "yield": "21%"
+    },
+    {
+      "symbol": "HAKY",
+      "name": "Amplify HACK Cybersecurity Covered Call ETF",
+      "votes": 18,
+      "yield": "16%"
     },
     {
       "symbol": "FIZY",
       "name": "Fitz-Gerald Must Have Portfolio and Options Overlay ETF",
-      "votes": 15,
+      "votes": 16,
       "yield": "14%"
     },
     {
@@ -55,12 +61,6 @@
       "name": "Overlay Shares Large Cap Equity ETF",
       "votes": 5,
       "yield": "10.8%"
-    },
-    {
-      "symbol": "TDVI",
-      "name": "FT Vest Technology Dividend Target Income ETF",
-      "votes": 5,
-      "yield": "7.7%"
     }
   ]
 }
