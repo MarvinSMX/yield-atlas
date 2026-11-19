@@ -1,12 +1,18 @@
 {
-  "updated": "2026-11-18T20:20:05.413Z",
+  "updated": "2026-11-19T07:01:39.876Z",
   "total_tracked": 173,
   "top": [
     {
       "symbol": "TMGN",
       "name": "TappAlpha Cboe Magnificent 10 Growth & Daily Income ETF",
-      "votes": 15,
+      "votes": 18,
       "yield": "21%"
+    },
+    {
+      "symbol": "FIZY",
+      "name": "Fitz-Gerald Must Have Portfolio and Options Overlay ETF",
+      "votes": 15,
+      "yield": "14%"
     },
     {
       "symbol": "DIVB",
@@ -17,25 +23,19 @@
     {
       "symbol": "SPYI",
       "name": "NEOS S&P 500 High Income ETF",
-      "votes": 13,
+      "votes": 14,
       "yield": "11.40%"
-    },
-    {
-      "symbol": "FIZY",
-      "name": "Fitz-Gerald Must Have Portfolio and Options Overlay ETF",
-      "votes": 11,
-      "yield": "14%"
     },
     {
       "symbol": "SEPI",
       "name": "Shelton Equity Premium Income ETF",
-      "votes": 9,
+      "votes": 10,
       "yield": "8.3%"
     },
     {
       "symbol": "CHPY",
       "name": "YieldMax Semiconductor Portfolio Option Income ETF",
-      "votes": 8,
+      "votes": 9,
       "yield": "40.5%"
     },
     {
