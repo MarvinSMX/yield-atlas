@@ -1,11 +1,17 @@
 {
-  "updated": "2026-11-20T06:54:25.107Z",
+  "updated": "2026-11-20T19:55:19.528Z",
   "total_tracked": 173,
   "top": [
     {
+      "symbol": "DIVB",
+      "name": "iShares Core Dividend ETF",
+      "votes": 24,
+      "yield": "2.1%"
+    },
+    {
       "symbol": "HAKY",
       "name": "Amplify HACK Cybersecurity Covered Call ETF",
-      "votes": 21,
+      "votes": 22,
       "yield": "16%"
     },
     {
@@ -27,15 +33,9 @@
       "yield": "14%"
     },
     {
-      "symbol": "DIVB",
-      "name": "iShares Core Dividend ETF",
-      "votes": 15,
-      "yield": "2.1%"
-    },
-    {
       "symbol": "CHPY",
       "name": "YieldMax Semiconductor Portfolio Option Income ETF",
-      "votes": 11,
+      "votes": 12,
       "yield": "40.5%"
     },
     {
