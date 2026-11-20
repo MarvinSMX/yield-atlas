@@ -1,7 +1,13 @@
 {
-  "updated": "2026-11-19T20:24:20.465Z",
+  "updated": "2026-11-20T06:54:25.107Z",
   "total_tracked": 173,
   "top": [
+    {
+      "symbol": "HAKY",
+      "name": "Amplify HACK Cybersecurity Covered Call ETF",
+      "votes": 21,
+      "yield": "16%"
+    },
     {
       "symbol": "TMGN",
       "name": "TappAlpha Cboe Magnificent 10 Growth & Daily Income ETF",
@@ -9,10 +15,10 @@
       "yield": "21%"
     },
     {
-      "symbol": "HAKY",
-      "name": "Amplify HACK Cybersecurity Covered Call ETF",
-      "votes": 18,
-      "yield": "16%"
+      "symbol": "SPYI",
+      "name": "NEOS S&P 500 High Income ETF",
+      "votes": 17,
+      "yield": "11.40%"
     },
     {
       "symbol": "FIZY",
@@ -23,26 +29,20 @@
     {
       "symbol": "DIVB",
       "name": "iShares Core Dividend ETF",
-      "votes": 14,
+      "votes": 15,
       "yield": "2.1%"
     },
     {
-      "symbol": "SPYI",
-      "name": "NEOS S&P 500 High Income ETF",
-      "votes": 14,
-      "yield": "11.40%"
+      "symbol": "CHPY",
+      "name": "YieldMax Semiconductor Portfolio Option Income ETF",
+      "votes": 11,
+      "yield": "40.5%"
     },
     {
       "symbol": "SEPI",
       "name": "Shelton Equity Premium Income ETF",
       "votes": 10,
       "yield": "8.3%"
-    },
-    {
-      "symbol": "CHPY",
-      "name": "YieldMax Semiconductor Portfolio Option Income ETF",
-      "votes": 9,
-      "yield": "40.5%"
     },
     {
       "symbol": "CSHI",
