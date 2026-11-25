@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T22:16:06.186Z",
+  "updated": "2026-11-25T08:07:06.138Z",
   "total_tracked": 173,
   "top": [
     {
@@ -27,6 +27,12 @@
       "yield": "40.4%"
     },
     {
+      "symbol": "JEPQ",
+      "name": "JPMorgan NASDAQ Equity Premium Income ETF",
+      "votes": 8,
+      "yield": "11.7%"
+    },
+    {
       "symbol": "TYLG",
       "name": "Information Technology Covered Call & Growth ETF",
       "votes": 7,
@@ -43,12 +49,6 @@
       "name": "Fitz-Gerald Must Have Portfolio and Options Overlay ETF",
       "votes": 6,
       "yield": "14%"
-    },
-    {
-      "symbol": "JEPQ",
-      "name": "JPMorgan NASDAQ Equity Premium Income ETF",
-      "votes": 6,
-      "yield": "11.7%"
     },
     {
       "symbol": "SEPI",
